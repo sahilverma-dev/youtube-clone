@@ -8,6 +8,7 @@ import { upload } from "../middlewares/multer.middleware";
 import {
   deleteVideo,
   getVideoInfo,
+  togglePublishStatus,
   updateVideo,
   uploadVideo,
 } from "../controllers/videos.controller";
@@ -45,6 +46,8 @@ router.patch(
   ]),
   updateVideo
 );
+
+router.patch("/:id/toggle", verifyJWT, togglePublishStatus);
 
 router.delete("/:id", verifyJWT, deleteVideo);
 

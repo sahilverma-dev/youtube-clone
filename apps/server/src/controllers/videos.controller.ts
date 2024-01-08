@@ -183,6 +183,37 @@ export const updateVideo = asyncHandler(async (req, res) => {
   }
 });
 
+export const togglePublishStatus = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+
+  const { user } = req;
+
+  const videoExist = await Video.findById(id);
+
+  if (!videoExist) {
+    throw new ApiError(404, "Video not found");
+  }
+
+  if (
+    videoExist.owner.toString() !== (user?._id as Types.ObjectId).toString()
+  ) {
+    throw new ApiError(403, "You don't have access to this video");
+  }
+
+  try {
+    videoExist.isPublished = !videoExist.isPublished;
+
+    const updatedVideo = await videoExist.save();
+    res.status(200).json(
+      new ApiResponse(200, "Video publish toggled successfully", {
+        video: updatedVideo,
+      })
+    );
+  } catch (error) {
+    throw new ApiError(500, "Failed to toggle video publish");
+  }
+});
+
 export const deleteVideo = asyncHandler(async (req, res) => {
   const { id } = req.params;
   const { user } = req;
