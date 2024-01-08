@@ -121,10 +121,18 @@ export const updateVideo = asyncHandler(async (req, res) => {
   const { id } = req.params;
   const { title, description } = req.body;
 
+  const { user } = req;
+
   const videoExist = await Video.findById(id);
 
   if (!videoExist) {
     throw new ApiError(404, "Video not found");
+  }
+
+  if (
+    videoExist.owner.toString() !== (user?._id as Types.ObjectId).toString()
+  ) {
+    throw new ApiError(403, "You don't have access to this video");
   }
 
   const { thumbnailFile } = req.files as {
