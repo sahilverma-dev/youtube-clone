@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { COOKIE_SECRET, CORS_ORIGIN } from "./constants/env";
+import { routers } from "./router";
 
 const app = express();
 
@@ -19,8 +20,7 @@ app.use(
 app.use(express.static("public"));
 app.use(cors({ origin: CORS_ORIGIN, credentials: true }));
 app.use(cookieParser(COOKIE_SECRET));
-app.use("/", (req, res) => {
-  res.send("Hello");
-});
+
+app.use("/api/v1", routers);
 
 export { app };

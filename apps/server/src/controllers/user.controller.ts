@@ -57,7 +57,8 @@ export const registerUser = asyncHandler(async (req, res) => {
     [key: string]: Express.Multer.File[];
   };
 
-  const avatarLocalPath = files?.avatar[0].path;
+  const avatarLocalPath = files?.avatar[0]?.path ?? null;
+
   const coverImageLocalPath = files?.coverImage
     ? files?.coverImage[0]?.path
     : null;
