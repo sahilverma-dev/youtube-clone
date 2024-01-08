@@ -6,6 +6,7 @@ import { upload } from "../middlewares/multer.middleware";
 
 // controllers
 import {
+  deleteVideo,
   getVideoInfo,
   updateVideo,
   uploadVideo,
@@ -44,5 +45,7 @@ router.patch(
   ]),
   updateVideo
 );
+
+router.delete("/:id", verifyJWT, deleteVideo);
 
 export const videosRouter = router;

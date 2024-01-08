@@ -182,3 +182,34 @@ export const updateVideo = asyncHandler(async (req, res) => {
     }
   }
 });
+
+export const deleteVideo = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  const { user } = req;
+
+  const videoExist = await Video.findById(id);
+
+  if (!videoExist) {
+    throw new ApiError(404, "Video not found");
+  }
+
+  if (
+    videoExist.owner.toString() !== (user?._id as Types.ObjectId).toString()
+  ) {
+    throw new ApiError(403, "You don't have access to this video");
+  }
+
+  try {
+    await videoExist.deleteOne();
+    // TODO delete old video and image file
+    res.status(200).json(
+      new ApiResponse(200, "Video deleted successfully", {
+        video: videoExist,
+      })
+    );
+  } catch (error) {
+    console.log(error);
+
+    throw new ApiError(500, "Failed to delete the video");
+  }
+});
