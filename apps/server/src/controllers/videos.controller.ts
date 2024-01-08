@@ -1,8 +1,9 @@
 import { Request, Response } from "express";
 import { asyncHandler } from "../utils/asyncHandler";
-import { ApiError } from "../utils/ApiError";
+import { ApiError } from "../utils/ApiErrors";
 import { ApiResponse } from "../utils/ApiResponse";
-import { uploadOnCloudinary } from "../services/cloudnary/config";
+import { uploadOnCloudinary } from "../configs/cloudnary";
+
 import { Video } from "../models/video.model";
 import { Types } from "mongoose";
 
