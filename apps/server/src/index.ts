@@ -1,14 +1,26 @@
 import "colors";
 
+import connectDB from "./configs/mongo";
+
 import { app } from "./app";
 import { PORT } from "./constants/env";
+import { connectRedis } from "./configs/redis";
 
-// cleaning log on refresh
+// cleaning log on save
 console.clear();
 
-app.listen(PORT, () => {
-  console.log(
-    "Server is running at port :".green,
-    process.env.PORT?.toString().blue
-  );
-});
+const main = async () => {
+  try {
+    await connectDB();
+    // TODO: fix redis issue
+    // await connectRedis();
+    app.listen(PORT, () => {
+      console.log(`NodeJS: Server listening on ${PORT}.`.green);
+    });
+  } catch (error) {
+    console.log("NodeJS: Failed to initialize app.".red);
+    console.log(error);
+  }
+};
+
+main();

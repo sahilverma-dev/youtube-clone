@@ -3,9 +3,13 @@ import { config } from "dotenv";
 // dotenv config
 config();
 
-// MongoDB
-export const MONGODB_URI = process.env.MONGODB_URI as string;
+// CONSTANTS
 export const PORT = process.env.PORT || 5000;
+
+
+// DBs
+export const MONGODB_URI = process.env.MONGODB_URI as string;
+export const REDIS_URI = process.env.REDIS_URI as string;
 
 // Authentication
 export const COOKIE_SECRET = process.env.COOKIE_SECRET;
