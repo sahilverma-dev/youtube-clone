@@ -1,4 +1,3 @@
-import { Request, Response } from "express";
 import { asyncHandler } from "../utils/asyncHandler";
 import { ApiError } from "../utils/ApiErrors";
 import { ApiResponse } from "../utils/ApiResponse";
@@ -7,65 +6,61 @@ import { uploadOnCloudinary } from "../configs/cloudnary";
 import { Video } from "../models/video.model";
 import { Types } from "mongoose";
 
-export const getVideoInfo = asyncHandler(
-  async (req: Request, res: Response) => {
-    const { id } = req.params;
+export const getVideoInfo = asyncHandler(async (req, res) => {
+  const { id } = req.params;
 
-    if (!id) {
-      throw new ApiError(400, "Video ID is required");
-    }
-
-    const video = await Video.aggregate([
-      {
-        $match: {
-          _id: new Types.ObjectId(id),
-        },
-      },
-      {
-        $lookup: {
-          from: "users",
-          foreignField: "_id",
-          localField: "owner",
-          as: "owner",
-          pipeline: [
-            {
-              $project: {
-                fullName: 1,
-                avatar: 1,
-                username: 1,
-              },
-            },
-          ],
-        },
-      },
-      {
-        $addFields: {
-          owner: {
-            $first: "$owner",
-          },
-        },
-      },
-    ]);
-
-    if (video.length) {
-      res.status(200).json(
-        new ApiResponse(200, "Video found", {
-          video: video[0],
-        })
-      );
-    } else {
-      res.status(404).json(
-        new ApiResponse(404, "Video not found", {
-          video: null,
-        })
-      );
-    }
+  if (!id) {
+    throw new ApiError(400, "Video ID is required");
   }
-);
 
-export const uploadVideo = asyncHandler(async (req: Request, res: Response) => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+  const video = await Video.aggregate([
+    {
+      $match: {
+        _id: new Types.ObjectId(id),
+      },
+    },
+    {
+      $lookup: {
+        from: "users",
+        foreignField: "_id",
+        localField: "owner",
+        as: "owner",
+        pipeline: [
+          {
+            $project: {
+              fullName: 1,
+              avatar: 1,
+              username: 1,
+            },
+          },
+        ],
+      },
+    },
+    {
+      $addFields: {
+        owner: {
+          $first: "$owner",
+        },
+      },
+    },
+  ]);
+
+  if (video.length) {
+    res.status(200).json(
+      new ApiResponse(200, "Video found", {
+        video: video[0],
+      })
+    );
+  } else {
+    res.status(404).json(
+      new ApiResponse(404, "Video not found", {
+        video: null,
+      })
+    );
+  }
+});
+
+export const uploadVideo = asyncHandler(async (req, res) => {
   const user = req?.user;
 
   if (!user) {

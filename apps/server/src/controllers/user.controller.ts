@@ -277,8 +277,6 @@ export const updateUserAvatar = asyncHandler(async (req, res) => {
   }
 
   try {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     const user = req.user;
 
     const updatedUser = await User.findByIdAndUpdate(
@@ -309,8 +307,6 @@ export const updateUserCoverImage = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Failed to upload coverImage file");
   }
   try {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     const user = req?.user;
 
     const updatedUser = await User.findByIdAndUpdate(
@@ -332,8 +328,6 @@ export const updateUserCoverImage = asyncHandler(async (req, res) => {
 export const getCurrentUser = asyncHandler(async (req, res) => {
   res.status(200).json(
     new ApiResponse(200, "Current user fetched successfully", {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
       user: req?.user,
     })
   );
@@ -378,8 +372,6 @@ export const getUserChannelProfile = asyncHandler(async (req, res) => {
         },
         isSubscribed: {
           $cond: {
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
             if: { $in: [req?.user?._id, "$subscribers.subscriber"] },
             then: true,
             else: false,
@@ -416,8 +408,6 @@ export const getUserHistory = asyncHandler(async (req, res) => {
   const user = await User.aggregate([
     {
       $match: {
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
         _id: new Types.ObjectId(req?.user?._id),
       },
       $lookup: {
