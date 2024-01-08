@@ -5,7 +5,11 @@ import { verifyJWT } from "../middlewares/auth.middleware";
 import { upload } from "../middlewares/multer.middleware";
 
 // controllers
-import { getVideoInfo, uploadVideo } from "../controllers/videos.controller";
+import {
+  getVideoInfo,
+  updateVideo,
+  uploadVideo,
+} from "../controllers/videos.controller";
 
 const router = Router();
 
@@ -27,6 +31,18 @@ router.post(
     },
   ]),
   uploadVideo
+);
+
+router.patch(
+  "/:id",
+  verifyJWT,
+  upload.fields([
+    {
+      name: "thumbnailFile",
+      maxCount: 1,
+    },
+  ]),
+  updateVideo
 );
 
 export const videosRouter = router;

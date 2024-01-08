@@ -73,7 +73,7 @@ export const uploadVideo = asyncHandler(async (req, res) => {
   if (!title || !description) {
     throw new ApiError(400, "All fields are required");
   }
-  // video files
+  // files
   const { videoFile, thumbnailFile } = req.files as {
     [key: string]: Express.Multer.File[];
   };
@@ -115,4 +115,62 @@ export const uploadVideo = asyncHandler(async (req, res) => {
       video: videoData,
     })
   );
+});
+
+export const updateVideo = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  const { title, description } = req.body;
+
+  const videoExist = await Video.findById(id);
+
+  if (!videoExist) {
+    throw new ApiError(404, "Video not found");
+  }
+
+  const { thumbnailFile } = req.files as {
+    [key: string]: Express.Multer.File[];
+  };
+
+  if (thumbnailFile) {
+    const oldThumbnailFile = videoExist.thumbnail;
+
+    try {
+      const newThumbnail = await uploadOnCloudinary(thumbnailFile[0].path);
+      // TODO delete old thumbnail
+      try {
+        videoExist.title = title;
+        videoExist.description = description;
+        videoExist.thumbnail = newThumbnail?.url as string;
+
+        const updatedVideo = await videoExist.save();
+        res.status(200).json(
+          new ApiResponse(
+            200,
+            "Video Updated successfully with new thumbnail",
+            {
+              video: updatedVideo,
+            }
+          )
+        );
+      } catch (error) {
+        throw new ApiError(500, "Failed to upload thumbnail");
+      }
+    } catch (error) {
+      throw new ApiError(500, "Failed to upload thumbnail");
+    }
+  } else {
+    try {
+      videoExist.title = title;
+      videoExist.description = description;
+
+      const updatedVideo = await videoExist.save();
+      res.status(200).json(
+        new ApiResponse(200, "Video Updated successfully without thumbnail", {
+          video: updatedVideo,
+        })
+      );
+    } catch (error) {
+      throw new ApiError(500, "Failed to upload thumbnail");
+    }
+  }
 });
