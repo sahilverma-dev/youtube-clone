@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/providers";
 import { cn } from "@/lib/utils";
+import Sidebar from "@/components/custom/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, "bg-background")}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="flex w-full h-dvh">
+            <Sidebar />
+            <main className="p-4">{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );
