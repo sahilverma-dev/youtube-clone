@@ -8,6 +8,7 @@ import { upload } from "../middlewares/multer.middleware";
 import {
   deleteVideo,
   getVideoInfo,
+  getVideos,
   togglePublishStatus,
   updateVideo,
   uploadVideo,
@@ -16,6 +17,7 @@ import {
 const router = Router();
 
 // normal routes
+router.get("/", getVideos);
 router.get("/:id", getVideoInfo);
 
 // secured routes

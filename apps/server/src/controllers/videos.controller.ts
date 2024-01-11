@@ -60,6 +60,53 @@ export const getVideoInfo = asyncHandler(async (req, res) => {
   }
 });
 
+export const getVideos = asyncHandler(async (req, res) => {
+  const { query, page, limit } = req.query;
+
+  const aggregate = Video.aggregate([
+    {
+      $match: { isPublished: true },
+    },
+    {
+      $lookup: {
+        from: "users",
+        as: "owner",
+        foreignField: "_id",
+        localField: "owner",
+        pipeline: [
+          {
+            $project: {
+              fullName: 1,
+              avatar: 1,
+              username: 1,
+            },
+          },
+        ],
+      },
+    },
+    {
+      $addFields: {
+        owner: { $arrayElemAt: ["$owner", 0] },
+      },
+    },
+  ]);
+
+  // @ts-ignore
+  const videos = await Video.aggregatePaginate(aggregate, {
+    page: page ? Number(page) : 0,
+    limit: limit ? Number(limit) : 10,
+  });
+
+  res.send({
+    videos: videos?.docs,
+    totalVideos: videos?.totalDocs,
+    nextPage: videos?.nextPage,
+    prevPage: videos?.prevPage,
+    hasNextPage: videos?.hasNextPage,
+    hasPrevPage: videos?.hasPrevPage,
+  });
+});
+
 export const uploadVideo = asyncHandler(async (req, res) => {
   const user = req?.user;
 
