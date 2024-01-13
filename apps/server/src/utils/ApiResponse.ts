@@ -1,7 +1,7 @@
 export class ApiResponse {
   statusCode: number;
   success: boolean;
-  data: unknown;
+  data: any;
   message: string;
 
   constructor(statusCode: number, message: string, data?: unknown) {
