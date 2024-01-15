@@ -4,6 +4,7 @@ import { Router } from "express";
 import { userRouter } from "./user.routes";
 import { videosRouter } from "./video.routes";
 import { postRoutes } from "./post.routes";
+import { playlistRouter } from "./playlist.routes";
 
 const routers = Router();
 
@@ -11,5 +12,6 @@ const routers = Router();
 routers.use("/users", userRouter);
 routers.use("/videos", videosRouter);
 routers.use("/posts", postRoutes);
+routers.use("/playlists", playlistRouter);
 
 export { routers };

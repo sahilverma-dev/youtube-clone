@@ -1,7 +1,7 @@
 import { Schema, Document, Types, model } from "mongoose";
 
 interface IPlaylist {
-  name: string;
+  title: string;
   description: string;
   videos: (Types.ObjectId | string)[];
   owner: Types.ObjectId | string;
@@ -13,13 +13,12 @@ interface PlaylistDocument extends IPlaylist, Document {
 
 const playlistSchema = new Schema<PlaylistDocument>(
   {
-    name: {
+    title: {
       type: String,
       required: true,
     },
     description: {
       type: String,
-      required: true,
     },
     videos: [
       {
