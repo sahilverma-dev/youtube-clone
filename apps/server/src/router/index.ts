@@ -7,6 +7,7 @@ import { videosRouter } from "./video.routes";
 import { postRoutes } from "./post.routes";
 import { playlistRouter } from "./playlist.routes";
 import { likeRouter } from "./like.routes";
+import { commentRouter } from "./comment.routes";
 
 const routers = Router();
 
@@ -17,5 +18,6 @@ routers.use("/videos", videosRouter);
 routers.use("/posts", postRoutes);
 routers.use("/playlists", playlistRouter);
 routers.use("/like", likeRouter);
+routers.use("/comment", commentRouter);
 
 export { routers };
