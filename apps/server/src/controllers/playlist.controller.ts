@@ -5,7 +5,6 @@ import { asyncHandler } from "../utils/asyncHandler";
 import { ApiResponse } from "../utils/ApiResponse";
 import { Video } from "../models/video.model";
 
-// TODO populate videos
 export const getGetPlaylist = asyncHandler(async (req, res) => {
   const { id } = req.params;
 
@@ -21,16 +20,16 @@ export const getGetPlaylist = asyncHandler(async (req, res) => {
     },
     {
       $lookup: {
-        as: "owner",
         from: "users",
-        foreignField: "_id",
         localField: "owner",
+        foreignField: "_id",
+        as: "owner",
         pipeline: [
           {
             $project: {
               fullName: 1,
-              avatar: 1,
               username: 1,
+              avatar: 1,
             },
           },
         ],
@@ -38,19 +37,36 @@ export const getGetPlaylist = asyncHandler(async (req, res) => {
     },
     {
       $lookup: {
-        from: "Videos",
-        let: { videoIds: "$videos" },
+        from: "videos",
+        localField: "videos",
+        foreignField: "_id",
+        as: "videos",
         pipeline: [
           {
-            $match: {
-              $expr: {
-                $in: ["$_id", "$$videoIds"],
+            $lookup: {
+              from: "users",
+              localField: "owner",
+              foreignField: "_id",
+              as: "owner",
+              pipeline: [
+                {
+                  $project: {
+                    fullName: 1,
+                    username: 1,
+                    avatar: 1,
+                  },
+                },
+              ],
+            },
+          },
+          {
+            $addFields: {
+              owner: {
+                $first: "$owner",
               },
             },
           },
-          // Add more stages if needed
         ],
-        as: "videoDetails",
       },
     },
     {
@@ -120,7 +136,7 @@ export const addVideosToPlaylist = asyncHandler(async (req, res) => {
     playlistId,
     {
       $push: {
-        videos: { $in: videoIds },
+        videos: { $each: videoIds.map((id) => new Types.ObjectId(id)) },
       },
     },
     { new: true }
@@ -178,7 +194,7 @@ export const removeVideosFromPlaylist = asyncHandler(async (req, res) => {
     playlistId,
     {
       $pull: {
-        videos: { $in: videoIds },
+        videos: { $each: videoIds.map((id) => new Types.ObjectId(id)) },
       },
     },
     { new: true }
