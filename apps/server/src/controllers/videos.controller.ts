@@ -5,6 +5,7 @@ import { uploadOnCloudinary } from "../configs/cloudnary";
 
 import { Video } from "../models/video.model";
 import { Types } from "mongoose";
+import { User } from "../models/user.model";
 
 export const getVideoInfo = asyncHandler(async (req, res) => {
   const { id } = req.params;
@@ -290,4 +291,41 @@ export const deleteVideo = asyncHandler(async (req, res) => {
 
     throw new ApiError(500, "Failed to delete the video");
   }
+});
+
+// add view to video
+export const watchVideo = asyncHandler(async (req, res) => {
+  const { videoId } = req.params as { videoId: string };
+
+  // check for video id
+  if (!videoId) {
+    throw new ApiError(404, "Video id is required");
+  }
+
+  // check for video
+  const videoExist = await Video.findById(videoId);
+  if (!videoExist) {
+    throw new ApiError(404, "Video doesn't exists");
+  }
+
+  // if there's a user add to the watch history and increase the view count
+  const { user } = req;
+  if (user) {
+    const newUser = await User.findByIdAndUpdate(user?._id, {
+      $push: {
+        watchHistory: videoExist?._id,
+      },
+    });
+
+    // check for comment
+    if (!newUser) {
+      throw new ApiError(404, "Failed to add video on user history");
+    }
+  }
+  // if there's no user do nothing
+  else {
+    return;
+  }
+  videoExist.views = videoExist?.views || 0 + 1;
+  await videoExist.save();
 });
