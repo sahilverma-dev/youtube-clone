@@ -2,6 +2,7 @@ import { Router } from "express";
 
 // controller
 import {
+  addVideoToUserHistory,
   changeCurrentPassword,
   getCurrentUser,
   getUserChannelProfile,
@@ -10,6 +11,7 @@ import {
   logoutUser,
   refreshAccessToken,
   registerUser,
+  removeVideoFromUserHistory,
   updateUserAvatar,
   updateUserCoverImage,
 } from "../controllers/user.controller";
@@ -51,5 +53,7 @@ router
 
 router.route("/c/:username").get(verifyJWT, getUserChannelProfile);
 router.route("/history").get(verifyJWT, getUserHistory);
+router.post("/add-history", verifyJWT, addVideoToUserHistory);
+router.delete("/remove-history", verifyJWT, removeVideoFromUserHistory);
 
 export const userRouter = router;

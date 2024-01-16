@@ -12,6 +12,7 @@ import {
 import { ApiResponse } from "../utils/ApiResponse";
 import { Types } from "mongoose";
 import { REFRESH_TOKEN_SECRET } from "../constants/env";
+import { Video } from "../models/video.model";
 
 const generateAccessAndRefreshToken = async (userId: Types.ObjectId) => {
   try {
@@ -405,12 +406,102 @@ export const getUserChannelProfile = asyncHandler(async (req, res) => {
   );
 });
 
+export const addVideoToUserHistory = asyncHandler(async (req, res) => {
+  const { videoId } = req.body as { videoId: string };
+
+  if (!videoId) {
+    throw new ApiError(404, "Video id is required");
+  }
+  // check for the video
+  const videoExist = await Video.findById(videoId);
+
+  if (!videoExist) {
+    throw new ApiError(404, "Video doesn't exist");
+  }
+
+  // check of the user
+  const { user } = req;
+  // add video id to user document
+
+  if (user) {
+    const newUser = await User.findByIdAndUpdate(
+      user._id,
+      {
+        // TODO can add timestamps as well and keep the watch history of the unique videos
+        $push: {
+          watchHistory: videoId,
+        },
+      },
+      {
+        new: true,
+      }
+    ).select("username avatar fullName watchHistory");
+
+    if (!newUser) {
+      throw new ApiError(500, "Failed to add video on the watch history");
+    }
+
+    res
+      .status(200)
+      .json(new ApiResponse(200, "Video added on the watch history", newUser));
+  }
+  // if there's no user do nothing
+  else {
+    return;
+  }
+});
+
+export const removeVideoFromUserHistory = asyncHandler(async (req, res) => {
+  const { videoId } = req.body as { videoId: string };
+
+  if (!videoId) {
+    throw new ApiError(404, "Video id is required");
+  }
+  // check for the video
+  const videoExist = await Video.findById(videoId);
+
+  if (!videoExist) {
+    throw new ApiError(404, "Video doesn't exist");
+  }
+
+  // check of the user
+  const { user } = req;
+  // remove video id to user document
+  if (user) {
+    const newUser = await User.findByIdAndUpdate(
+      user._id,
+      {
+        $pull: {
+          watchHistory: videoId,
+        },
+      },
+      {
+        new: true,
+      }
+    ).select("username avatar fullName watchHistory");
+
+    if (!newUser) {
+      throw new ApiError(500, "Failed to add video on the watch history");
+    }
+
+    res
+      .status(200)
+      .json(new ApiResponse(200, "Video added on the watch history", newUser));
+  }
+  // if there's no user do nothing
+  else {
+    return;
+  }
+});
+
 export const getUserHistory = asyncHandler(async (req, res) => {
   const user = await User.aggregate([
     {
       $match: {
         _id: new Types.ObjectId(req?.user?._id),
       },
+    },
+    {
       $lookup: {
         from: "videos",
         localField: "watchHistory",
@@ -431,14 +522,14 @@ export const getUserHistory = asyncHandler(async (req, res) => {
                     avatar: 1,
                   },
                 },
-                {
-                  $addFields: {
-                    owner: {
-                      $first: "$owner",
-                    },
-                  },
-                },
               ],
+            },
+          },
+          {
+            $addFields: {
+              owner: {
+                $first: "$owner",
+              },
             },
           },
         ],
@@ -450,9 +541,14 @@ export const getUserHistory = asyncHandler(async (req, res) => {
     throw new ApiError(404, "Failed to fet user watch history Data");
   }
 
-  res.status(200).json(
-    new ApiResponse(200, "Get Watch History Data", {
-      watchHistory: user[0]?.watchHistory,
-    })
-  );
+  const videos = user[0]?.watchHistory;
+
+  res
+    .status(200)
+    .json(
+      new ApiResponse(200, "Get Watch History Data", {
+        videos,
+        totalVideos: videos?.length || 0,
+      })
+    );
 });
