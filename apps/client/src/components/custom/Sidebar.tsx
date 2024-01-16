@@ -50,7 +50,7 @@ const Sidebar = () => {
       animate={{
         width: isOpenSidebar ? "250px" : "auto",
       }}
-      className="border-r h-screen p-4 flex gap-2 flex-col items-center justify-between"
+      className="border-r flex-shrink-0 h-screen p-4 flex gap-2 flex-col items-center justify-between"
     >
       <div className="flex w-full items-center justify-between">
         {isOpenSidebar && (

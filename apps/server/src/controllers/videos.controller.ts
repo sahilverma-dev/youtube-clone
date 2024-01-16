@@ -47,11 +47,7 @@ export const getVideoInfo = asyncHandler(async (req, res) => {
   ]);
 
   if (video.length) {
-    res.status(200).json(
-      new ApiResponse(200, "Video found", {
-        video: video[0],
-      })
-    );
+    res.status(200).json(new ApiResponse(200, "Video found", video[0]));
   } else {
     res.status(404).json(
       new ApiResponse(404, "Video not found", {
