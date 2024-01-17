@@ -18,6 +18,7 @@ import {
   AiFillDislike as DislikeFillIcon,
 } from "react-icons/ai";
 import { HiOutlineDotsHorizontal as DotsIcon } from "react-icons/hi";
+import { RiPlayListAddLine as SaveIcon } from "react-icons/ri";
 
 // components
 import Description from "./components/Description";
@@ -64,7 +65,7 @@ const Video: FC<Props> = async ({ params }) => {
             <Button className="rounded-full">Subscribe</Button>
           </div>
           <div className="w-full flex justify-end items-center gap-2">
-            <div className="flex bg-secondary h-10 p-2 rounded-full items-center  divide-x">
+            <div className="flex bg-secondary h-10 p-2 rounded-full items-center  divide-x divide-foreground">
               <button className="flex items-center gap-2 px-2">
                 <LikeFillIcon />
                 <p className="text-sm">1k</p>
@@ -81,6 +82,10 @@ const Video: FC<Props> = async ({ params }) => {
             <Button className="rounded-full gap-3" variant={"secondary"}>
               <DownloadIcon size={20} />
               Download
+            </Button>
+            <Button className="rounded-full gap-3" variant={"secondary"}>
+              <SaveIcon size={18} />
+              Save
             </Button>
             <Button
               className="rounded-full"

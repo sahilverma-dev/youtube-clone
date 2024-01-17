@@ -14,9 +14,8 @@ interface Props {
 const Description: FC<Props> = ({ description, time, views }) => {
   const [open, setOpen] = useState(false);
   return (
-    <motion.div
-      className="bg-secondary p-4 rounded-xl w-full text-sm cursor-pointer"
-      layout
+    <div
+      className="bg-secondary p-4 rounded-xl w-full h-auto text-sm cursor-pointer transition-all"
       onClick={() => {
         setOpen((state) => !state);
       }}
@@ -27,11 +26,11 @@ const Description: FC<Props> = ({ description, time, views }) => {
       </p>
       <p
         //   ! TBD
-        className={cn(["text-secondary-foreground w-full", open && "truncate"])}
+        className={cn(["text-secondary-foreground w-full"])}
       >
-        {description}
+        {open ? description : description.slice(0, 200)}
       </p>
-    </motion.div>
+    </div>
   );
 };
 

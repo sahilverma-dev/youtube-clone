@@ -13,7 +13,7 @@ const VideosGrid: FC<Props> = ({ videos }) => {
         <VideoCard key={video._id} video={video} />
         ))} */}
       {Array.from({ length: 50 }).map((_, index) => (
-        <VideoCard key={index} video={videos[0]} />
+        <VideoCard key={index} video={videos[index % 2]} />
       ))}
     </div>
   );

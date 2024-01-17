@@ -3,6 +3,7 @@
 import { PropsWithChildren } from "react";
 import { ThemeProvider } from "./ThemeProvider";
 import ReactQueryProvider from "./ReactQueryProvider";
+import { Toaster } from "../ui/toaster";
 
 const Providers = ({ children }: PropsWithChildren) => {
   return (
@@ -14,6 +15,7 @@ const Providers = ({ children }: PropsWithChildren) => {
         storageKey="youtube-theme"
         disableTransitionOnChange
       >
+        <Toaster />
         {children}
       </ThemeProvider>
     </ReactQueryProvider>

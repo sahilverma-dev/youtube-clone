@@ -23,7 +23,7 @@ export default function RootLayout({
         <Providers>
           <div className="flex w-full h-dvh">
             <Sidebar />
-            <main className="p-4 h-dvh overflow-y-auto">{children}</main>
+            <main className="p-4 w-full h-dvh overflow-y-auto">{children}</main>
           </div>
         </Providers>
       </body>

@@ -1,7 +1,11 @@
 import { Video } from "@/interfaces";
+import { formatVideoDuration, formatViewCount, getTime } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { Button } from "../ui/button";
+
+import { HiOutlineDotsVertical as DotsIcon } from "react-icons/hi";
 
 interface Props {
   video: Video;
@@ -21,8 +25,8 @@ const VideoCard: FC<Props> = ({ video }) => {
           width={600}
           className="w-full h-full object-cover hover:scale-105 transition-all"
         />
-        <div className="absolute bottom-2 right-2 bg-secondary-foreground/50  dark:bg-secondary-foreground/10 backdrop-blur rounded-md text-xs text-primary-foreground font-medium py-1 px-2">
-          1:20:22
+        <div className="absolute bottom-2 right-2 bg-secondary-foreground/50  dark:bg-secondary/10 backdrop-blur rounded-md text-xs text-primary-foreground font-medium py-1 px-2">
+          {formatVideoDuration(video.duration)}
         </div>
       </Link>
       <div className="flex flex-grow gap-2">
@@ -35,10 +39,10 @@ const VideoCard: FC<Props> = ({ video }) => {
             height={70}
             width={70}
             alt={video.owner.fullName}
-            className="h-9 w-9 aspect-square rounded-full object-cover"
+            className="h-10 w-10 aspect-square rounded-full object-cover"
           />
         </Link>
-        <div className="w-full flex flex-col ">
+        <div className="flex-grow flex flex-col ">
           <Link
             href={`/video/${video._id}`}
             className="font-semibold text-foreground"
@@ -48,7 +52,17 @@ const VideoCard: FC<Props> = ({ video }) => {
           <p className="text-xs font-medium text-secondary-foreground">
             {video.owner.fullName}
           </p>
+          <p className="text-xs text-secondary-foreground">
+            {formatViewCount(98765)} • {getTime(video.createdAt)}
+          </p>
         </div>
+        <Button
+          className="rounded-full flex-shrink-0 opacity-0 group-hover:opacity-100 transition-all"
+          variant={"ghost"}
+          size={"icon"}
+        >
+          <DotsIcon size={20} />
+        </Button>
       </div>
     </div>
   );
