@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Providers from "@/components/providers";
+import "../(user)/globals.css";
 import { cn } from "@/lib/utils";
-import Sidebar from "@/components/custom/Sidebar";
-import Header from "@/components/custom/Header";
+import Providers from "@/components/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,15 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn(inter.className, "bg-background")}>
-        <Providers>
-          <div className="flex w-full h-dvh">
-            <Sidebar />
-            <main className="w-full h-dvh overflow-y-auto">
-              <Header />
-              <div className="w-full p-4">{children}</div>
-            </main>
-          </div>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

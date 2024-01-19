@@ -53,18 +53,6 @@ const Sidebar = () => {
       className="border-r flex-shrink-0 h-screen p-4 flex gap-2 flex-col items-center justify-between"
     >
       <div className="flex w-full items-center justify-between">
-        {isOpenSidebar && (
-          <Link href={"/"}>
-            <Image
-              src={"/logo-light.png"}
-              height={60}
-              width={150}
-              alt="logo"
-              className="h-6 w-auto object-cover"
-            />
-          </Link>
-        )}
-
         <Button variant={"ghost"} size={"icon"} onClick={toggleSidebar}>
           <MenuIcon />
         </Button>

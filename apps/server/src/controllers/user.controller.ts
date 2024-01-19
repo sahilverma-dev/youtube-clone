@@ -101,48 +101,48 @@ export const registerUser = asyncHandler(async (req, res) => {
 });
 
 export const loginUser = asyncHandler(async (req, res) => {
-  const { username, email, password } = req.body;
+  const { username = "", email = "", password = "" } = req.body;
 
-  if ((!username || !email) && !password) {
-    throw new ApiError(400, "username or email are required");
+  if (!username && !email) {
+    throw new ApiError(400, "Username or email is required");
   }
 
-  const user = await User.findOne({
-    $or: [{ username }, { email }],
-  });
+  const user = await User.findOne({ $or: [{ username }, { email }] });
 
-  if (user) {
-    const isPasswordCorrect = await user.isPasswordCorrect(password);
-    if (isPasswordCorrect) {
-      const { accessToken, refreshToken } = await generateAccessAndRefreshToken(
-        user._id
-      );
-
-      const loggedInUser = await User.findById(user._id).select(
-        "-password -refreshToken"
-      );
-
-      const options = {
-        httpOnly: true,
-        secure: true,
-      };
-
-      res
-        .status(200)
-        .cookie("accessToken", accessToken, options)
-        .cookie("refreshToken", refreshToken, options)
-        .json(
-          new ApiResponse(200, "User Logged In successful", {
-            user: loggedInUser,
-            refreshToken,
-          })
-        );
-    } else {
-      throw new ApiError(401, "Password is not correct");
-    }
-  } else {
+  if (!user) {
     throw new ApiError(404, "User not found");
   }
+
+  const isPasswordCorrect = await user.isPasswordCorrect(password);
+
+  if (!isPasswordCorrect) {
+    throw new ApiError(401, "Password is not correct");
+  }
+
+  const { accessToken, refreshToken } = await generateAccessAndRefreshToken(
+    user._id
+  );
+
+  const loggedInUser = await User.findOne({ _id: user._id }).select(
+    "-password -refreshToken"
+  );
+
+  const options = {
+    httpOnly: true,
+    secure: true,
+  };
+
+  res
+    .status(200)
+    .cookie("accessToken", accessToken, options)
+    .cookie("refreshToken", refreshToken, options)
+    .json(
+      new ApiResponse(200, "User Logged In successful", {
+        user: loggedInUser,
+        accessToken,
+        refreshToken,
+      })
+    );
 });
 
 export const logoutUser = asyncHandler(async (req, res) => {
@@ -327,12 +327,18 @@ export const updateUserCoverImage = asyncHandler(async (req, res) => {
   }
 });
 
+// export const getCurrentUser = asyncHandler(async (req, res) => {
+//   res.status(200).json(
+//     new ApiResponse(200, "Current user fetched successfully", {
+//       user: req?.user,
+//     })
+//   );
+// });
+
 export const getCurrentUser = asyncHandler(async (req, res) => {
-  res.status(200).json(
-    new ApiResponse(200, "Current user fetched successfully", {
-      user: req?.user,
-    })
-  );
+  res
+    .status(200)
+    .json(new ApiResponse(200, "User fetched successfully", req?.user));
 });
 
 export const getUserChannelProfile = asyncHandler(async (req, res) => {
@@ -543,12 +549,10 @@ export const getUserHistory = asyncHandler(async (req, res) => {
 
   const videos = user[0]?.watchHistory;
 
-  res
-    .status(200)
-    .json(
-      new ApiResponse(200, "Get Watch History Data", {
-        videos,
-        totalVideos: videos?.length || 0,
-      })
-    );
+  res.status(200).json(
+    new ApiResponse(200, "Get Watch History Data", {
+      videos,
+      totalVideos: videos?.length || 0,
+    })
+  );
 });

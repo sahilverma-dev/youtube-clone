@@ -15,7 +15,7 @@ const Description: FC<Props> = ({ description, time, views }) => {
   const [open, setOpen] = useState(false);
   return (
     <div
-      className="bg-secondary p-4 rounded-xl w-full h-auto text-sm cursor-pointer transition-all"
+      className="bg-secondary hover:bg-secondary-foreground/10 dark:hover:bg-secondary/50 p-4 rounded-xl w-full h-auto text-sm cursor-pointer transition-all"
       onClick={() => {
         setOpen((state) => !state);
       }}

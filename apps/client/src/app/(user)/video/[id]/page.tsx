@@ -1,28 +1,16 @@
-import { getFeedVideos } from "@/api/videos/getFeedVideos";
-import { getVideoWithId } from "@/api/videos/getVideoWithId";
-import VideoCard from "@/components/custom/VideoCard";
-import VideoPlayer from "@/components/custom/VideoPlayer";
-import { Button } from "@/components/ui/button";
-
-import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 
-// icons
-import { MdDownload as DownloadIcon } from "react-icons/md";
-import {
-  AiOutlineShareAlt as ShareIcon,
-  AiOutlineLike as LikeOutlineIcon,
-  AiOutlineDislike as DislikeOutlineIcon,
-  AiFillLike as LikeFillIcon,
-  AiFillDislike as DislikeFillIcon,
-} from "react-icons/ai";
-import { HiOutlineDotsHorizontal as DotsIcon } from "react-icons/hi";
-import { RiPlayListAddLine as SaveIcon } from "react-icons/ri";
+// api calls
+import { getFeedVideos } from "@/api/videos/getFeedVideos";
+import { getVideoWithId } from "@/api/videos/getVideoWithId";
 
 // components
+import VideoPlayer from "@/components/custom/VideoPlayer";
 import Description from "./components/Description";
 import CommentSection from "./components/CommentSection";
+import LikeUnlikeSection from "./components/LikeUnlikeSection";
+import SubscribeSection from "./components/SubscribeSection";
+import VideoCard from "@/components/custom/VideoCard";
 
 interface Props {
   params: { id: string };
@@ -41,60 +29,8 @@ const Video: FC<Props> = async ({ params }) => {
         <VideoPlayer video={video} />
         <h1 className="text-2xl font-bold">{video.title}</h1>
         <div className="w-full flex items-center justify-between">
-          <div className="w-full flex items-center gap-4">
-            <Link href={`/channel/${video.owner.username}`}>
-              <Image
-                src={video.owner.avatar}
-                height={100}
-                width={100}
-                className="h-11 w-11 aspect-square object-cover rounded-full"
-                alt={video.owner.fullName}
-              />
-            </Link>
-            <div className="flex flex-col">
-              <Link
-                href={`/channel/${video.owner.username}`}
-                className="font-bold text-lg text-foreground"
-              >
-                {video.owner.fullName}
-              </Link>
-              <p className="text-xs font-medium to-secondary-foreground">
-                1M subscribers
-              </p>
-            </div>
-            <Button className="rounded-full">Subscribe</Button>
-          </div>
-          <div className="w-full flex justify-end items-center gap-2">
-            <div className="flex bg-secondary h-10 p-2 rounded-full items-center  divide-x divide-foreground">
-              <button className="flex items-center gap-2 px-2">
-                <LikeFillIcon />
-                <p className="text-sm">1k</p>
-              </button>
-              <button className="flex items-center gap-2 px-2">
-                <DislikeOutlineIcon />
-                <p className="text-sm">0</p>
-              </button>
-            </div>
-            <Button className="rounded-full gap-3" variant={"secondary"}>
-              <ShareIcon size={20} />
-              Share
-            </Button>
-            <Button className="rounded-full gap-3" variant={"secondary"}>
-              <DownloadIcon size={20} />
-              Download
-            </Button>
-            <Button className="rounded-full gap-3" variant={"secondary"}>
-              <SaveIcon size={18} />
-              Save
-            </Button>
-            <Button
-              className="rounded-full"
-              variant={"secondary"}
-              size={"icon"}
-            >
-              <DotsIcon size={20} />
-            </Button>
-          </div>
+          <SubscribeSection owner={video.owner} subscribers={6540} />
+          <LikeUnlikeSection video={video} />
         </div>
         <hr />
         <Description

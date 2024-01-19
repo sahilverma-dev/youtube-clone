@@ -9,16 +9,22 @@ import * as z from "zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
-import { useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { userStore } from "@/store";
+import Link from "next/link";
+
+// icons
+import { CgSpinner as SpinnerIcon } from "react-icons/cg";
+import { ApiResponse, Comment } from "@/interfaces";
+import { addVideoComment } from "@/api/comments/addVideoComment";
+import { toast } from "@/components/ui/use-toast";
 
 interface Props {
   videoId: string;
@@ -31,6 +37,8 @@ const formSchema = z.object({
 });
 
 const CommentForm: FC<Props> = ({ videoId }) => {
+  const { user } = userStore();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,12 +48,36 @@ const CommentForm: FC<Props> = ({ videoId }) => {
 
   const queryClient = useQueryClient();
 
+  const { isPending, mutate: commentMutation } = useMutation<
+    ApiResponse<Comment>,
+    unknown,
+    { content: string },
+    unknown
+  >({
+    mutationFn: ({ content }) =>
+      addVideoComment({
+        content,
+        videoId,
+      }),
+    onSuccess: () => {
+      form.setValue("comment", "");
+      queryClient.refetchQueries({
+        queryKey: ["comments", videoId],
+      });
+    },
+    onError: (error: any) => {
+      toast({
+        title: error?.message || "Failed to comment",
+        variant: "destructive",
+      });
+    },
+  });
+
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
-    queryClient.refetchQueries({
-      queryKey: ["comments", videoId],
+
+    commentMutation({
+      content: values.comment,
     });
   };
 
@@ -55,19 +87,31 @@ const CommentForm: FC<Props> = ({ videoId }) => {
         <FormField
           control={form.control}
           name="comment"
+          disabled={isPending}
           render={({ field }) => (
             <FormItem>
               <FormControl>
                 <div className="w-full flex items-center gap-2">
-                  <Image
-                    src={
-                      "http://res.cloudinary.com/sahilverma-dev/image/upload/v1705473235/awcgnoebkjhpnoiyfv5n.png"
-                    }
-                    alt={"sahil"}
-                    height={50}
-                    width={50}
-                    className="h-10 w-10 aspect-square rounded-full object-cover"
-                  />
+                  {user ? (
+                    <Link href={`/c/${user.username}`}>
+                      <Image
+                        src={user.avatar}
+                        alt={user.fullName}
+                        height={50}
+                        width={50}
+                        className="h-10 w-10 aspect-square rounded-full object-cover"
+                      />
+                    </Link>
+                  ) : (
+                    <Image
+                      src={"/default-user.png"}
+                      alt={"default user"}
+                      height={50}
+                      width={50}
+                      className="h-10 w-10 aspect-square rounded-full object-cover"
+                    />
+                  )}
+
                   <Input
                     className="w-full rounded-lg"
                     placeholder="Add a comment..."
@@ -80,7 +124,13 @@ const CommentForm: FC<Props> = ({ videoId }) => {
           )}
         />
         <div className="flex w-full justify-end">
-          <Button type="submit" className="rounded-full" variant={"secondary"}>
+          <Button
+            disabled={isPending}
+            type="submit"
+            className="rounded-full gap-2"
+            variant={"secondary"}
+          >
+            {isPending && <SpinnerIcon className="animate-spin text-xl" />}
             Comment
           </Button>
         </div>

@@ -110,7 +110,18 @@ export const addCommentToVideo = asyncHandler(async (req, res) => {
     throw new ApiError(500, "Failed to add comment");
   }
 
-  res.status(200).json(new ApiResponse(200, "Comment added to video", comment));
+  const commentData = await comment.populate(
+    "owner",
+    "fullName avatar username"
+  );
+  // check for comment data
+  if (!comment) {
+    throw new ApiError(500, "Failed to add comment");
+  }
+
+  res
+    .status(200)
+    .json(new ApiResponse(200, "Comment added to video", commentData));
 });
 
 export const editCommentOfVideo = asyncHandler(async (req, res) => {

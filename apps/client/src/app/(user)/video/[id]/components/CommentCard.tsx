@@ -1,7 +1,13 @@
-import { Comment } from "@/interfaces";
-import { getTime } from "@/lib/utils";
-import Image from "next/image";
+"use client";
+
 import { FC } from "react";
+import { Comment } from "@/interfaces";
+
+// utils
+import { getTime } from "@/lib/utils";
+
+// components
+import Image from "next/image";
 
 interface Props {
   comment: Comment;
