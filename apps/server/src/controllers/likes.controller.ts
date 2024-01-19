@@ -20,19 +20,21 @@ export const likeVideo = asyncHandler(async (req, res) => {
     {
       $match: {
         video: videoExist._id,
-        likedBy: new Types.ObjectId(req.user?._id),
+        likedBy: req.user?._id,
       },
     },
   ]);
 
   if (existingLike) {
     res.status(400).json(new ApiResponse(400, "Video already liked"));
+
+    return;
   }
 
   // Create a new Like
   const like = await Like.create({
     video: videoExist._id,
-    likedBy: new Types.ObjectId(req.user?._id),
+    likedBy: req.user?._id,
   });
 
   if (!like) {
@@ -66,7 +68,6 @@ export const unlikeVideo = asyncHandler(async (req, res) => {
 
   res.status(200).json(new ApiResponse(200, "Video unliked"));
 });
-
 
 export const likePost = asyncHandler(async (req, res) => {
   const { id } = req.params as { id: string };

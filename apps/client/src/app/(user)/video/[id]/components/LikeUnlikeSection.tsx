@@ -28,7 +28,7 @@ import {
 
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Video } from "@/interfaces";
-import { cn } from "@/lib/utils";
+import { cn, formatLikeCount } from "@/lib/utils";
 
 const LikeUnlikeSection: FC<Props> = ({ video }) => {
   const shareVideo = async () => {
@@ -42,8 +42,8 @@ const LikeUnlikeSection: FC<Props> = ({ video }) => {
     <div className="w-full flex justify-end items-center gap-2">
       <div className="flex bg-secondary h-10 p-2 rounded-full items-center  divide-x divide-foreground">
         <button className="flex items-center gap-2 px-2">
-          <LikeFillIcon />
-          <p className="text-sm">1k</p>
+          {video?.likedByUser ? <LikeFillIcon /> : <LikeOutlineIcon />}
+          <p className="text-sm">{formatLikeCount(video?.likes || 0)}</p>
         </button>
         <button className="flex items-center gap-2 px-2">
           <DislikeOutlineIcon />

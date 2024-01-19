@@ -1,5 +1,4 @@
 import { asyncHandler } from "../utils/asyncHandler";
-import { ApiError } from "../utils/ApiErrors";
 
 import jwt from "jsonwebtoken";
 
@@ -14,7 +13,9 @@ export const verifyJWT = asyncHandler(async (req, _, next) => {
       req.header("Authorization")?.replace("Bearer ", "");
 
     if (!token) {
-      throw new ApiError(401, "Unauthorized user");
+      // No token provided, proceed with req.user set to null
+      req.user = undefined;
+      return next();
     }
 
     const decodedToken = jwt.verify(token, ACCESS_TOKEN_SECRET as string) as {
@@ -22,7 +23,9 @@ export const verifyJWT = asyncHandler(async (req, _, next) => {
     };
 
     if (!decodedToken) {
-      throw new ApiError(401, "Unauthorized user");
+      // Invalid token, proceed with req.user set to null
+      req.user = undefined;
+      return next();
     }
 
     const user = await User.findById(decodedToken._id).select(
@@ -30,13 +33,17 @@ export const verifyJWT = asyncHandler(async (req, _, next) => {
     );
 
     if (!user) {
-      throw new ApiError(401, "Unauthorized user");
+      // User not found, proceed with req.user set to null
+      req.user = undefined;
+      return next();
     }
 
     req.user = user;
     next();
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
-    throw new ApiError(401, error?.message || "Unauthorized user");
+    // Handle token verification errors
+    req.user = undefined;
+    return next();
   }
 });

@@ -14,27 +14,72 @@ export const getVideoInfo = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Video ID is required");
   }
 
+  const userId = req.user ? req.user._id : null; // Get user ID from req.user if available
+
   const video = await Video.aggregate([
     {
       $match: {
         _id: new Types.ObjectId(id),
       },
     },
+
     {
       $lookup: {
         from: "users",
-        foreignField: "_id",
         localField: "owner",
+        foreignField: "_id",
         as: "owner",
         pipeline: [
           {
             $project: {
-              fullName: 1,
-              avatar: 1,
               username: 1,
+              displayName: 1,
+              avatar: 1,
             },
           },
         ],
+      },
+    },
+    {
+      $lookup: {
+        from: "likes",
+        localField: "_id",
+        foreignField: "video",
+        as: "likes",
+      },
+    },
+    {
+      $lookup: {
+        from: "likes",
+        let: {
+          videoId: "$_id",
+          userId,
+        },
+        pipeline: [
+          {
+            $match: {
+              $expr: {
+                $and: [
+                  {
+                    $eq: ["$video", "$$videoId"],
+                  },
+                  {
+                    $cond: {
+                      if: {
+                        $eq: ["$$userId", null],
+                      },
+                      then: false,
+                      else: {
+                        $eq: ["$likedBy", "$$userId"],
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+          },
+        ],
+        as: "userLikes",
       },
     },
     {
@@ -42,6 +87,27 @@ export const getVideoInfo = asyncHandler(async (req, res) => {
         owner: {
           $first: "$owner",
         },
+        likes: {
+          $size: "$likes",
+        },
+        isLikedByUser: {
+          $gt: [{ $size: "$userLikes" }, 0],
+        },
+      },
+    },
+    {
+      $project: {
+        owner: 1,
+        source: 1,
+        thumbnail: 1,
+        title: 1,
+        description: 1,
+        likes: 1,
+        isPublished: 1,
+        views: 1,
+        createdAt: 1,
+        updatedAt: 1,
+        isLikedByUser: 1,
       },
     },
   ]);

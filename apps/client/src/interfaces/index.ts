@@ -9,6 +9,8 @@ export interface Video {
   owner: Owner;
   createdAt: string;
   updatedAt: string;
+  likes?: number;
+  likedByUser?: boolean;
 }
 
 export interface Owner {

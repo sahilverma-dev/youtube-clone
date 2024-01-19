@@ -86,3 +86,15 @@ export const formatViewCount = (viewCount: number): string => {
     return `${viewCount} views`;
   }
 };
+
+export const formatLikeCount = (viewCount: number): string => {
+  if (viewCount >= 1_000_000_000) {
+    return `${(viewCount / 1_000_000_000).toFixed(1)}B`;
+  } else if (viewCount >= 1_000_000) {
+    return `${(viewCount / 1_000_000).toFixed(1)}M`;
+  } else if (viewCount >= 1_000) {
+    return `${(viewCount / 1_000).toFixed(1)}K`;
+  } else {
+    return `${viewCount}`;
+  }
+};

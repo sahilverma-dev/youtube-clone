@@ -17,7 +17,7 @@ import {
 const router = Router();
 
 // normal routes
-router.get("/", getVideos);
+router.get("/", verifyJWT, getVideos);
 router.get("/:id", getVideoInfo);
 
 // secured routes
