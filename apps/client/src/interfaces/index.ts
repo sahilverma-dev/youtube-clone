@@ -61,3 +61,15 @@ export interface User {
   updatedAt: string;
   refreshToken: string;
 }
+
+export interface Channel {
+  _id: string;
+  username: string;
+  email: string;
+  fullName: string;
+  avatar: string;
+  coverImage: string;
+  subscribersCount: number;
+  channelsSubscribedToCount: number;
+  isSubscribed: boolean;
+}

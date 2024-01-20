@@ -42,8 +42,8 @@ const Video: FC<Props> = async ({ params }) => {
       </div>
       <div className="w-full md:w-96 space-y-4">
         <h2 className="text-lg font-medium">Recommended Videos</h2>
-        {Array.from({ length: 10 }).map((_, index) => (
-          <VideoCard key={index} video={videos[0]} />
+        {videos.map((video) => (
+          <VideoCard key={video._id} video={video} />
         ))}
       </div>
     </div>

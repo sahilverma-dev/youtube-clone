@@ -9,11 +9,8 @@ interface Props {
 const VideosGrid: FC<Props> = ({ videos }) => {
   return (
     <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {/* {videos.map((video) => (
+      {videos.map((video) => (
         <VideoCard key={video._id} video={video} />
-        ))} */}
-      {Array.from({ length: 50 }).map((_, index) => (
-        <VideoCard key={index} video={videos[index % 2]} />
       ))}
     </div>
   );

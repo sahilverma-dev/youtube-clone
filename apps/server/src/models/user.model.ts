@@ -14,6 +14,7 @@ export interface IUser {
   email: string;
   fullName: string;
   avatar: string;
+  isVerified: boolean;
   coverImage?: string;
   watchHistory?: Types.ObjectId[];
   password: string;
@@ -51,9 +52,12 @@ const userSchema = new Schema<IUser, UserModel, IUserMethods>(
       trim: true,
       index: true,
     },
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
     avatar: {
       type: String, // cloudinary url
-      required: true,
     },
     coverImage: {
       type: String, // cloudinary url

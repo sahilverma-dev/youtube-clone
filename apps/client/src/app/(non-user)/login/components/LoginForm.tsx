@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
+import { useRouter } from "next/navigation";
 import * as z from "zod";
 // components
 import { Button } from "@/components/ui/button";
@@ -48,6 +49,7 @@ const formSchema = z.object({
 
 const LoginForm = () => {
   const { login } = userStore();
+  const { replace } = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -75,7 +77,7 @@ const LoginForm = () => {
       console.log(data);
       toast({ title: `Welcome ${data?.data?.user?.fullName}` });
       login(data.data.user);
-      // redirect("/");
+      replace("/");
     },
     onError: (error: any) => {
       toast({

@@ -5,6 +5,15 @@ const nextConfig = {
       {
         hostname: "res.cloudinary.com",
       },
+      {
+        hostname: "img.youtube.com",
+      },
+      {
+        hostname: "yt3.googleusercontent.com",
+      },
+      {
+        hostname: "yt3.ggpht.com",
+      },
     ],
   },
 };

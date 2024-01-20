@@ -58,28 +58,22 @@ export const registerUser = asyncHandler(async (req, res) => {
     [key: string]: Express.Multer.File[];
   };
 
-  const avatarLocalPath = files?.avatar[0]?.path ?? null;
+  const avatarLocalPath = files?.coverImage ? files?.avatar[0]?.path : null;
 
   const coverImageLocalPath = files?.coverImage
     ? files?.coverImage[0]?.path
     : null;
 
-  if (!avatarLocalPath) {
-    throw new ApiError(400, "Avatar file is required");
-  }
-  const avatar = await uploadOnCloudinary(avatarLocalPath);
+  const avatar =
+    avatarLocalPath !== null ? await uploadOnCloudinary(avatarLocalPath) : null;
 
   const coverImage =
     coverImageLocalPath !== null
       ? await uploadOnCloudinary(coverImageLocalPath)
       : null;
 
-  if (!avatar) {
-    throw new ApiError(400, "Avatar file is required");
-  }
-
   const user = await User.create({
-    avatar: avatar.url,
+    avatar: avatar !== null ? avatar.url : "",
     coverImage: coverImage !== null ? coverImage?.url : "",
     email,
     fullName,
@@ -342,7 +336,9 @@ export const getCurrentUser = asyncHandler(async (req, res) => {
 });
 
 export const getUserChannelProfile = asyncHandler(async (req, res) => {
-  const { username } = req.body;
+  const { username } = req.params as { username: string };
+
+  console.log(username);
 
   if (!username) {
     throw new ApiError(400, "username is required");
@@ -405,11 +401,7 @@ export const getUserChannelProfile = asyncHandler(async (req, res) => {
     throw new ApiError(404, "channel not found");
   }
 
-  res.status(200).json(
-    new ApiResponse(200, "Channel Data", {
-      channel: channel[0],
-    })
-  );
+  res.status(200).json(new ApiResponse(200, "Channel Data", channel[0]));
 });
 
 export const addVideoToUserHistory = asyncHandler(async (req, res) => {
