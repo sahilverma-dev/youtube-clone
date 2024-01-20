@@ -1,0 +1,191 @@
+[
+  {
+    "_id": {
+      "$oid": "65abfb5b697a3cc10d95ee99"
+    },
+    "username": "test-user",
+    "email": "test@mail.com",
+    "fullName": "Test User",
+    "isVerified": false,
+    "avatar": "",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6",
+    "createdAt": {
+      "$date": "2024-01-20T16:56:59.596Z"
+    },
+    "updatedAt": {
+      "$date": "2024-01-20T16:56:59.596Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af62"
+    },
+    "username": "sahilverma.dev",
+    "email": "sahilverma.webdev@mail.com",
+    "fullName": "Sahil Verma",
+    "isVerified": true,
+    "avatar": "https://yt3.ggpht.com/yti/AGOGRCqXXHzWKoVNkSUbY_BbcMLTqzKP3KqbN0x5RMzxNA",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af63"
+    },
+    "username": "fireship",
+    "email": "fireship@mail.com",
+    "fullName": "Fireship",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZTUVa5AeFd3m5-4fdY2hEaKof3Byp8VruZ0f0FNEA",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af64"
+    },
+    "username": "chaiaurcode",
+    "email": "chaiaurcode@mail.com",
+    "fullName": "Chai aur Code",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af65"
+    },
+    "username": "raftaarmusic",
+    "email": "raftaarmusic@mail.com",
+    "fullName": "Raftaar",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/-45nJ_SwOTKNICeL3jD0LaAIHZ4le8ak4AeuzMOr_z5Qzt1q2TR2rqkG-X9byVRzfhrV4b5LHvo",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af66"
+    },
+    "username": "KRSNAOfficial",
+    "email": "KRSNAOfficial@mail.com",
+    "fullName": "KRSNA",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZSXMsDfcmB-Olaqu_0av1XFlHq5S5qsTK5-92eL0Q",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af67"
+    },
+    "username": "eminem",
+    "email": "eminem@mail.com",
+    "fullName": "EminemMusic",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZQrpStGczvXHzHvPuwD14uphsidqaACSjLHQ61Jqw",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af68"
+    },
+    "username": "neetcode",
+    "email": "NeetCode@mail.com",
+    "fullName": "NeetCode",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/FqiGBOsNpeWbNw20ULboW0jy88JdpqFO9a-YRJ0C2oc4lZ8uoHYJ38PWSkrjdC_zQgNW9pGU",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af69"
+    },
+    "username": "hnasr",
+    "email": "hnasr@mail.com",
+    "fullName": "Hussein Nasser",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZS0krHTgQPYs1OHwsfLpB_WHEaTPhDvIBY6X17Hlg",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af6a"
+    },
+    "username": "TraversyMedia",
+    "email": "TraversyMedia@mail.com",
+    "fullName": "Traversy Media",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZQyCMRsbjT3YVfsbbnKgLfaH20Yb25KBwHP9qw9uw",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af6b"
+    },
+    "username": "codewithantonio",
+    "email": "codewithantonio@mail.com",
+    "fullName": "Code With Antonio",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/v5yebiyShCTNr18fnhq_oWHjQ24rAcrkexosBb8rFA8HI3elXOOSzUKfqrO8IlE_HaC7mgU0sw",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af6c"
+    },
+    "username": "CodeBullet",
+    "email": "CodeBullet@mail.com",
+    "fullName": "Code Bullet",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZSJUKtJ1Ap2SkQTR-COp32d4tXsZWOuVMYyWhwH",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af6d"
+    },
+    "username": "Danidev",
+    "email": "Danidev@mail.com",
+    "fullName": "Dani",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZSIxhzGAGw1ta_j2v1hP4QmqOZk250D1gF6X9U5pw",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  },
+  {
+    "_id": {
+      "$oid": "65ac0076e7f1555f3933af6e"
+    },
+    "username": "CodersGyan",
+    "email": "CodersGyan@mail.com",
+    "fullName": "Coders Gyan",
+    "isVerified": true,
+    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZRhrM28GqZV2TWnm0v7e8QPuTHaPz2ke1HIZCcM",
+    "coverImage": "",
+    "watchHistory": [],
+    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
+  }
+]
