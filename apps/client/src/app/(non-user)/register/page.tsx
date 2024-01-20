@@ -1,16 +1,16 @@
 import { Metadata } from "next";
-import LoginForm from "./components/LoginForm";
+import RegisterForm from "./components/RegisterForm";
 
 export const metadata: Metadata = {
-  title: "Login",
+  title: "Register",
 };
 
-const Login = () => {
+const Register = () => {
   return (
     <div className="w-full h-dvh flex items-center justify-center">
-      <LoginForm />
+      <RegisterForm />
     </div>
   );
 };
 
-export default Login;
+export default Register;

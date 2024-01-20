@@ -9,7 +9,10 @@ import Header from "@/components/custom/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Youtube Clone",
+  title: {
+    template: "%s - Youtube Clone",
+    default: "Youtube Clone",
+  },
   description: "Youtube Clone by Sahil Verma",
 };
 

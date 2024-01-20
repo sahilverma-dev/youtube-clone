@@ -73,8 +73,8 @@ export const registerUser = asyncHandler(async (req, res) => {
       : null;
 
   const user = await User.create({
-    avatar: avatar !== null ? avatar.url : "",
-    coverImage: coverImage !== null ? coverImage?.url : "",
+    avatar: avatar !== null ? avatar.url : null,
+    coverImage: coverImage !== null ? coverImage?.url : null,
     email,
     fullName,
     password,
@@ -86,9 +86,7 @@ export const registerUser = asyncHandler(async (req, res) => {
   );
 
   if (createdUser) {
-    res
-      .status(201)
-      .json(new ApiResponse(200, "User created", { user: createdUser }));
+    res.status(201).json(new ApiResponse(200, "User created", createdUser));
   } else {
     throw new ApiError(500, "Something went wrong while creating user");
   }
