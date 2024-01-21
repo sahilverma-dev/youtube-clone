@@ -5,9 +5,24 @@
     },
     "title": "JavaScript for the Haters",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/aXOChLn5ZdQ/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/aXOChLn5ZdQ/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/aXOChLn5ZdQ/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -19,9 +34,24 @@
     },
     "title": "The Gemini Lie",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/90CYYfl9ntM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/90CYYfl9ntM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/90CYYfl9ntM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -33,9 +63,24 @@
     },
     "title": "Google's Gemini just made GPT-4 look like a baby's toy?",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/q5qAVmXSecQ/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/q5qAVmXSecQ/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/q5qAVmXSecQ/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -47,9 +92,24 @@
     },
     "title": "Binary Explained in 01100100 Seconds",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/zDNaUi2cjv4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/zDNaUi2cjv4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/zDNaUi2cjv4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -61,9 +121,24 @@
     },
     "title": "How to get a Million YouTube Subscribers in 100 Seconds",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/j_q0D_jbMk8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/j_q0D_jbMk8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/j_q0D_jbMk8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -75,9 +150,24 @@
     },
     "title": "CSS in 100 Seconds",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/OEV8gMkCHXQ/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/OEV8gMkCHXQ/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/OEV8gMkCHXQ/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -89,9 +179,24 @@
     },
     "title": "Brainf**k in 100 Seconds",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/hdHjjBS4cs8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/hdHjjBS4cs8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/hdHjjBS4cs8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -103,9 +208,24 @@
     },
     "title": "the ChatGPT store is about to launch… let's get rich",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/9T_wv6D8PYo/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/9T_wv6D8PYo/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/9T_wv6D8PYo/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -117,9 +237,24 @@
     },
     "title": "CPU vs GPU vs TPU vs DPU vs QPU",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/r5NQecwZs1A/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/r5NQecwZs1A/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/r5NQecwZs1A/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -131,9 +266,24 @@
     },
     "title": "How programmers flex on each other",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/r6tH55syq0o/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/r6tH55syq0o/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/r6tH55syq0o/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -145,9 +295,24 @@
     },
     "title": "The truth about the OpenAI drama",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/4Ff2ZrhVkp0/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/4Ff2ZrhVkp0/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/4Ff2ZrhVkp0/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af63"
@@ -159,9 +324,24 @@
     },
     "title": "Call and this in javascript | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/-owpuf4lbyU/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/-owpuf4lbyU/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/-owpuf4lbyU/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -173,9 +353,24 @@
     },
     "title": "Magic of Prototype in javascript | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/uMI5cNeHTOc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/uMI5cNeHTOc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/uMI5cNeHTOc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -187,9 +382,24 @@
     },
     "title": "Object Oriented in Javascript | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/pN-Qmv4zBcI/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/pN-Qmv4zBcI/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/pN-Qmv4zBcI/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -201,9 +411,24 @@
     },
     "title": "Now you know fetch in javascript | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/Rive84an6Lc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/Rive84an6Lc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/Rive84an6Lc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -215,9 +440,24 @@
     },
     "title": "Promise in javascript | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/NJwRQgsu1Q8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/NJwRQgsu1Q8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/NJwRQgsu1Q8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -229,9 +469,24 @@
     },
     "title": "API request and V8 engine | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/pDPAcYdSse8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/pDPAcYdSse8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/pDPAcYdSse8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -243,9 +498,24 @@
     },
     "title": "2 projects with Async JS | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/efrW5-IYoCU/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/efrW5-IYoCU/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/efrW5-IYoCU/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -257,9 +527,24 @@
     },
     "title": "Async Javascript fundamentals | chai aur #javascript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/zgt5oTD3rRc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/zgt5oTD3rRc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/zgt5oTD3rRc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -271,9 +556,24 @@
     },
     "title": "Build your own array in Cpp with @mysirgdotcom (MySirG)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/jnLqwigdRig/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/jnLqwigdRig/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/jnLqwigdRig/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -285,9 +585,24 @@
     },
     "title": "Open source ka NAATAK",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/EKRdobRY-fc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/EKRdobRY-fc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/EKRdobRY-fc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -299,9 +614,24 @@
     },
     "title": "Why FAANG companies ask for DSA ?",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/9KuFW-g1B-I/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/9KuFW-g1B-I/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/9KuFW-g1B-I/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af64"
@@ -313,9 +643,24 @@
     },
     "title": "RAFTAAR - MICROPHONE CHECK | BAR'ISH EP | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/oWcDvdaLqSk/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/oWcDvdaLqSk/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/oWcDvdaLqSk/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -327,9 +672,24 @@
     },
     "title": "RAFTAAR - NEVER BACK DOWN (OFFICIAL VISUALIZER)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/2m03GWoUkio/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/2m03GWoUkio/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/2m03GWoUkio/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -341,9 +701,24 @@
     },
     "title": "RAFTAAR X KR$NA | WOH RAAT | Official Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/bvAS1avuOpY/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/bvAS1avuOpY/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/bvAS1avuOpY/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -355,9 +730,24 @@
     },
     "title": "Shah Rule - Nahi Hai Woh ft. MC Altaf and Raftaar | Prod. by Stunnah Beatz | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/7nAWlImUcMM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/7nAWlImUcMM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/7nAWlImUcMM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -369,9 +759,24 @@
     },
     "title": "KSHMR, Raftaar - Legacy [Official Music Video]",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/w6mUB5j2MpQ/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/w6mUB5j2MpQ/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/w6mUB5j2MpQ/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -383,9 +788,24 @@
     },
     "title": "AAGE CHAL (OFFICIAL VIDEO) - RAFTAAR | SAURABH LOKHANDE | !LLMIND | KALAMKAAR",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/WklJsXi_vWI/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/WklJsXi_vWI/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/WklJsXi_vWI/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -397,9 +817,24 @@
     },
     "title": "RAFTAAR x PRABH DEEP - TRAP PRAA (Explicit Warning) | PRAA | Official Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/QqyuVF1u7_Y/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/QqyuVF1u7_Y/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/QqyuVF1u7_Y/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -411,9 +846,24 @@
     },
     "title": "RAFTAAR - BLACK SHEEP | BAR'ISH EP | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/=QCxXJMhQNZQ/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/=QCxXJMhQNZQ/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/=QCxXJMhQNZQ/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -425,9 +875,24 @@
     },
     "title": "RAFTAAR Ft. SALIM MERCHANT & KARMA - Tu Phir Se Aana | BAR'ISH EP | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/cyUS0OLqyQM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/cyUS0OLqyQM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/cyUS0OLqyQM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -439,9 +904,24 @@
     },
     "title": "RAFTAAR x KARMA - 36 (Explicit Warning) | Hard Drive Vol. 1 | Official Visualiser",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/n1DjT52hIIE/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/n1DjT52hIIE/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/n1DjT52hIIE/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -453,9 +933,24 @@
     },
     "title": "Raftaar x Brodha V - Naachne Ka Shaunq",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/QvswgfLDuPg/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/QvswgfLDuPg/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -467,9 +962,24 @@
     },
     "title": "Restart - Rap | 12th Fail | Raftaar | Vidhu Vinod Chopra | Vikrant Massey | Swanand Kirkire",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/EMXNbb24Wy8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/EMXNbb24Wy8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/EMXNbb24Wy8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -481,9 +991,24 @@
     },
     "title": "Raftaar x Nawazuddin Siddiqui - MANTOIYAT | Manto",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/7gUAGZ30F9o/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/7gUAGZ30F9o/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/7gUAGZ30F9o/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af65"
@@ -495,9 +1020,24 @@
     },
     "title": "KR$NA - Wanna Know | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/YMrMbm0fFxo/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/YMrMbm0fFxo/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/YMrMbm0fFxo/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -509,9 +1049,24 @@
     },
     "title": "KR$NA ft. Seedhe Maut - Hola Amigo | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/De9VIp37CjY/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/De9VIp37CjY/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/De9VIp37CjY/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -523,9 +1078,24 @@
     },
     "title": "KR$NA ft. AR PAISLEY - SOME OF US | Far From Over EP",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/3VtcQv5Z4OU/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/3VtcQv5Z4OU/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/3VtcQv5Z4OU/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -537,9 +1107,24 @@
     },
     "title": "KR$NA - Prarthana | Prod. Bharg | Far From Over EP",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/OKPAPX_fGVw/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/OKPAPX_fGVw/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/OKPAPX_fGVw/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -551,9 +1136,24 @@
     },
     "title": "KR$NA - Kaha Tak | Visualiser | Prod. Jokhay and Umair | Time Will Tell EP",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/lt8ZIrNEUL8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/lt8ZIrNEUL8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/lt8ZIrNEUL8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -565,9 +1165,24 @@
     },
     "title": "KR$NA Ft. French The Kid - 10 PE 10 | Official Music Video | (Indian Drill) 🇮🇳🇬🇧",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/cO3wnhL3Hv4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/cO3wnhL3Hv4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/cO3wnhL3Hv4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -579,9 +1194,24 @@
     },
     "title": "KR$NA - I Guess | Official Music Video",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/Qg9LxRHLbAk/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/Qg9LxRHLbAk/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/Qg9LxRHLbAk/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -593,9 +1223,24 @@
     },
     "title": "KR$NA - Machayenge 4 | Official Music Video (Prod. Pendo46)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/gpKxohYVFH8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/gpKxohYVFH8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/gpKxohYVFH8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -607,9 +1252,24 @@
     },
     "title": "KR$NA Ft. RAFTAAR - Saza-E-Maut | Official Music Video | (Indian Drill)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/o907r6NsK9s/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/o907r6NsK9s/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/o907r6NsK9s/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af66"
@@ -621,9 +1281,24 @@
     },
     "title": "Eminem - Love The Way You Lie ft. Rihanna",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/uelHwf8o7_U/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/uelHwf8o7_U/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/uelHwf8o7_U/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af67"
@@ -635,9 +1310,24 @@
     },
     "title": "Eminem - Without Me (Official Music Video)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/YVkUvmDQ3HY/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/YVkUvmDQ3HY/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/YVkUvmDQ3HY/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af67"
@@ -649,9 +1339,24 @@
     },
     "title": "Eminem - Not Afraid",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/j5-yKhDd64s/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/j5-yKhDd64s/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af67"
@@ -663,9 +1368,24 @@
     },
     "title": "Eminem - Rap God (Explicit)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/XbGs_qK2PQA/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/XbGs_qK2PQA/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/XbGs_qK2PQA/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af67"
@@ -677,9 +1397,24 @@
     },
     "title": "Eminem - When I'm Gone (Official Music Video)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/1wYNFfgrXTI/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/1wYNFfgrXTI/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/1wYNFfgrXTI/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af67"
@@ -691,9 +1426,24 @@
     },
     "title": "Eminem - Mockingbird [Official Music Video]",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/S9bCLPwzSC0/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/S9bCLPwzSC0/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/S9bCLPwzSC0/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af67"
@@ -705,9 +1455,24 @@
     },
     "title": "My Techlead Roasted Me",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/rekkXqTMDfw/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/rekkXqTMDfw/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/rekkXqTMDfw/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -719,9 +1484,24 @@
     },
     "title": "How I got my First Internship (as a software engineer)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/RdYb5jfPZoE/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/RdYb5jfPZoE/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/RdYb5jfPZoE/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -733,9 +1513,24 @@
     },
     "title": "Sum of Subarray Minimums - Leetcode 907 - Python",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/aX1F2-DrBkQ/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/aX1F2-DrBkQ/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/aX1F2-DrBkQ/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -747,9 +1542,24 @@
     },
     "title": "Proof that Leetcode WON'T make you a good developer",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/0ZeSEXhxRCc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/0ZeSEXhxRCc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/0ZeSEXhxRCc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -761,9 +1571,24 @@
     },
     "title": "Leaf-Similar Trees - Leetcode 872 - Python",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/Nr8dbnL0_cM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/Nr8dbnL0_cM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/Nr8dbnL0_cM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -775,9 +1600,24 @@
     },
     "title": "The Best Engineer I worked with at Google",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/ugm09VUhM5E/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/ugm09VUhM5E/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/ugm09VUhM5E/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -789,9 +1629,24 @@
     },
     "title": "What I Hated about working at Google",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/H3loXVm46f0/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/H3loXVm46f0/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/H3loXVm46f0/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af68"
@@ -803,9 +1658,24 @@
     },
     "title": "Proxy vs. Reverse Proxy (Explained by Example)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/ozhe__GdWC8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/ozhe__GdWC8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/ozhe__GdWC8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -817,9 +1687,24 @@
     },
     "title": "How to Become a Good Backend Engineer (Fundamentals)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/V3ZPPPKEipA/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/V3ZPPPKEipA/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/V3ZPPPKEipA/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -831,9 +1716,24 @@
     },
     "title": "Apache Kafka Crash Course",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/R873BlNVUB4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/R873BlNVUB4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/R873BlNVUB4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -845,9 +1745,24 @@
     },
     "title": "I ask this question to every Backend Engineer I interview",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/bDIB2eIzIC8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/bDIB2eIzIC8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/bDIB2eIzIC8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -859,9 +1774,24 @@
     },
     "title": "I like this Backend",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/MxFt3YsjyQg/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/MxFt3YsjyQg/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/MxFt3YsjyQg/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -873,9 +1803,24 @@
     },
     "title": "Public IP vs. Private IP and Port Forwarding (Explained by Example)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/92b-jjBURkw/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/92b-jjBURkw/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/92b-jjBURkw/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -887,9 +1832,24 @@
     },
     "title": "Database Indexing Explained (with PostgreSQL)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/-qNSXK7s7_w/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/-qNSXK7s7_w/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/-qNSXK7s7_w/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -901,9 +1861,24 @@
     },
     "title": "WebSockets Crash Course - Handshake, Use-cases, Pros & Cons and more",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/2Nt-ZrNP22A/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/2Nt-ZrNP22A/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/2Nt-ZrNP22A/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -915,9 +1890,24 @@
     },
     "title": "SSH Tunneling - Local & Remote Port Forwarding (by Example)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/N8f5zv9UUMI/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/N8f5zv9UUMI/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/N8f5zv9UUMI/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -929,9 +1919,24 @@
     },
     "title": "Protocol Buffers Crash Course",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/46O73On0gyI/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/46O73On0gyI/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/46O73On0gyI/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af69"
@@ -943,9 +1948,24 @@
     },
     "title": "Build Strength From Struggle | My Story",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/XW1aGkzyjQg/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/XW1aGkzyjQg/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/XW1aGkzyjQg/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6a"
@@ -957,9 +1977,24 @@
     },
     "title": "My First Freelance Gig Was a Disaster",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/lRogMYe7ZLg/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/lRogMYe7ZLg/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/lRogMYe7ZLg/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6a"
@@ -971,9 +2006,24 @@
     },
     "title": "HTMX Crash Course | Dynamic Pages Without Writing Any JavaScript",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/0UvA7zvwsmg/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/0UvA7zvwsmg/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/0UvA7zvwsmg/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6a"
@@ -985,9 +2035,24 @@
     },
     "title": "Should You Test As A Web Developer?",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/ULDCt13hetw/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/ULDCt13hetw/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/ULDCt13hetw/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6a"
@@ -999,9 +2064,24 @@
     },
     "title": "Astro Quick Start Course | Build an SSR Blog",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/XoIHKO6AkoM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/XoIHKO6AkoM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/XoIHKO6AkoM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6a"
@@ -1013,9 +2093,24 @@
     },
     "title": "15 Web Developer-Related Career Paths",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/1_gLbLPx2T8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/1_gLbLPx2T8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/1_gLbLPx2T8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6a"
@@ -1027,9 +2122,24 @@
     },
     "title": "Next Auth V5 - Advanced Guide (2024)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/1MTyCvS05V4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/1MTyCvS05V4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/1MTyCvS05V4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1041,9 +2151,24 @@
     },
     "title": "Build a Livestream App With Next.js | Twitch Clone | Part 2/2",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/nav55-4ISg4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/nav55-4ISg4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/nav55-4ISg4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1055,9 +2180,24 @@
     },
     "title": "Build a Livestream App With Next.js | Twitch Clone | Part 1/2",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/a02JAryRPVU/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/a02JAryRPVU/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/a02JAryRPVU/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1069,9 +2209,24 @@
     },
     "title": "Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/pRybm9lXW2c/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/pRybm9lXW2c/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/pRybm9lXW2c/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1083,9 +2238,24 @@
     },
     "title": "Fullstack Notion Clone: Next.js 13, React, Convex, Tailwind | Full Course 2023",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/0OaDyjB9Ib8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/0OaDyjB9Ib8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/0OaDyjB9Ib8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1097,9 +2267,24 @@
     },
     "title": "Build a Course & LMS Platform: Next 13, React, Stripe, Mux, Prisma, Tailwind, MySQL | Udemy Clone",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/Big_aFLmekI/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/Big_aFLmekI/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/Big_aFLmekI/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1111,9 +2296,24 @@
     },
     "title": "Full Stack Netflix Clone in React, Tailwind CSS, Next.JS, Prisma, MongoDB, NextAuth & Vercel (2023)",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/mqUN4N2q4qY/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/mqUN4N2q4qY/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/mqUN4N2q4qY/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6b"
@@ -1125,9 +2325,24 @@
     },
     "title": "How I made AI Generated Rick and Morty Episodes",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/g39AagVW0s0/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/g39AagVW0s0/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/g39AagVW0s0/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6c"
@@ -1139,9 +2354,24 @@
     },
     "title": "AI Learns to Play SUIKA GAME",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/QbwgQSwMSGM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/QbwgQSwMSGM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/QbwgQSwMSGM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6c"
@@ -1153,9 +2383,24 @@
     },
     "title": "FUNNIEST moments From AI RICK and MORTY",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/JPv5FWCYdXc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/JPv5FWCYdXc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/JPv5FWCYdXc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6c"
@@ -1167,9 +2412,24 @@
     },
     "title": "How I made AI Generated Rick and Morty Episodes",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/g39AagVW0s0/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/g39AagVW0s0/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/g39AagVW0s0/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6c"
@@ -1181,9 +2441,24 @@
     },
     "title": "DESTROYING Guitar Hero with an AUTOCLICKER",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/XzJ2qK5DX18/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/XzJ2qK5DX18/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/XzJ2qK5DX18/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6c"
@@ -1195,9 +2470,24 @@
     },
     "title": "10k Special - Face Reveal, Release Date? & Patreon Launch",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/cBF1KZMpnI4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/cBF1KZMpnI4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/cBF1KZMpnI4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1209,9 +2499,24 @@
     },
     "title": "200 to 200k Subscribers in 6 Months",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/40CcHsRe5K8/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/40CcHsRe5K8/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/40CcHsRe5K8/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1223,9 +2528,24 @@
     },
     "title": "I Made Among Us, but it's 3D",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/K0X5A6aURms/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/K0X5A6aURms/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/K0X5A6aURms/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1237,9 +2557,24 @@
     },
     "title": "He said I Couldn't Make a VR Game... So I Bought a VR Headset and Made One!",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/nR9UfOueJPU/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/nR9UfOueJPU/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/nR9UfOueJPU/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1251,9 +2586,24 @@
     },
     "title": "Adding a Dragon Boss to my Game Because Steam is Mad at me",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/qPly1M-JEqc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/qPly1M-JEqc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/qPly1M-JEqc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1265,9 +2615,24 @@
     },
     "title": "Adding a Giant Crab to my Game So Netflix doesn't Sue me",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/iP_F_k2rtpg/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/iP_F_k2rtpg/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/iP_F_k2rtpg/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1279,9 +2644,24 @@
     },
     "title": "He said I Couldn't Make a Multiplayer Survival Game... So I Made One!",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/GWc7QppCPHM/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/GWc7QppCPHM/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/GWc7QppCPHM/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6d"
@@ -1293,9 +2673,24 @@
     },
     "title": "Learn React Js for beginners in Hindi 🔥🔥",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/MfhZJcTOy1A/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/MfhZJcTOy1A/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/MfhZJcTOy1A/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1307,9 +2702,24 @@
     },
     "title": "Single Responsibility Principle: The Foundation of SOLID Principles in Coding",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/_wqJYjd9NQw/sddefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/_wqJYjd9NQw/sddefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/_wqJYjd9NQw/sddefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1321,9 +2731,24 @@
     },
     "title": "Debounce in JavaScript | Important Interview Questions in Hindi | Part 5 🔥🚀",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/OcxNH3QNDl4/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/OcxNH3QNDl4/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/OcxNH3QNDl4/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1335,9 +2760,24 @@
     },
     "title": "Advanced React Query Tutorial - Part 2: Mastering Server-State Management",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/FYvXzdAIJuc/maxresdefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/FYvXzdAIJuc/maxresdefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/FYvXzdAIJuc/maxresdefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1349,9 +2789,24 @@
     },
     "title": "Unlocking the Secrets of Open/Closed Principle in OOP",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/DyP93e7xmTA/sddefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/DyP93e7xmTA/sddefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/DyP93e7xmTA/sddefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1363,9 +2818,24 @@
     },
     "title": "Quick SSL Setup: A Beginner's Guide to Self-Signed SSL Certificates",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/f-vb2B0STWI/sddefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/f-vb2B0STWI/sddefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/f-vb2B0STWI/sddefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1377,9 +2847,24 @@
     },
     "title": "Learn Dependency Injection in 30 Minutes [NEW]",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/dtTvCs_NsV8/sddefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/dtTvCs_NsV8/sddefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/dtTvCs_NsV8/sddefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"
@@ -1391,9 +2876,24 @@
     },
     "title": "Passport.js vs. JWT: Unraveling Authentication in Web Development",
     "description": "This particular video has been incorporated into the dataset purely for the purpose of testing. If you find it unnecessary or wish to expedite the evaluation process, feel free to skip this specific video. For a more thorough exploration and testing of the system's capabilities, consider adding a variety of videos to assess how well the functionality accommodates diverse content inputs. Your active involvement in uploading and testing various videos will contribute significantly to a comprehensive assessment of the system's performance and features.",
-    "thumbnail": "https://img.youtube.com/vi/yxhz7hsAd6o/sddefault.jpg",
+    "thumbnail": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://img.youtube.com/vi/yxhz7hsAd6o/sddefault.jpg",
+      "secure_url": "https://img.youtube.com/vi/yxhz7hsAd6o/sddefault.jpg"
+    },
     "duration": 1000,
-    "video": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+    "video": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "video",
+
+      "url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4",
+      "secure_url": "http://res.cloudinary.com/sahilverma-dev/video/upload/v1705776234/videos/ef5kqq6sochjvov3auez.mp4"
+    },
     "isPublished": true,
     "owner": {
       "$oid": "65ac0076e7f1555f3933af6e"

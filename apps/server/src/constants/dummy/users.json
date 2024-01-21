@@ -1,34 +1,21 @@
 [
   {
     "_id": {
-      "$oid": "65abfb5b697a3cc10d95ee99"
-    },
-    "username": "test-user",
-    "email": "test@mail.com",
-    "fullName": "Test User",
-    "isVerified": false,
-    "avatar": "",
-    "coverImage": "",
-    "watchHistory": [],
-    "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6",
-    "createdAt": {
-      "$date": "2024-01-20T16:56:59.596Z"
-    },
-    "updatedAt": {
-      "$date": "2024-01-20T16:56:59.596Z"
-    },
-    "__v": 0
-  },
-  {
-    "_id": {
       "$oid": "65ac0076e7f1555f3933af62"
     },
     "username": "sahilverma.dev",
     "email": "sahilverma.webdev@mail.com",
     "fullName": "Sahil Verma",
     "isVerified": true,
-    "avatar": "https://yt3.ggpht.com/yti/AGOGRCqXXHzWKoVNkSUbY_BbcMLTqzKP3KqbN0x5RMzxNA",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.ggpht.com/yti/AGOGRCqXXHzWKoVNkSUbY_BbcMLTqzKP3KqbN0x5RMzxNA",
+      "secure_url": "https://yt3.ggpht.com/yti/AGOGRCqXXHzWKoVNkSUbY_BbcMLTqzKP3KqbN0x5RMzxNA"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -40,8 +27,15 @@
     "email": "fireship@mail.com",
     "fullName": "Fireship",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZTUVa5AeFd3m5-4fdY2hEaKof3Byp8VruZ0f0FNEA",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZTUVa5AeFd3m5-4fdY2hEaKof3Byp8VruZ0f0FNEA",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZTUVa5AeFd3m5-4fdY2hEaKof3Byp8VruZ0f0FNEA"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -53,8 +47,15 @@
     "email": "chaiaurcode@mail.com",
     "fullName": "Chai aur Code",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2",
+      "secure_url": "https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -66,8 +67,15 @@
     "email": "raftaarmusic@mail.com",
     "fullName": "Raftaar",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/-45nJ_SwOTKNICeL3jD0LaAIHZ4le8ak4AeuzMOr_z5Qzt1q2TR2rqkG-X9byVRzfhrV4b5LHvo",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/-45nJ_SwOTKNICeL3jD0LaAIHZ4le8ak4AeuzMOr_z5Qzt1q2TR2rqkG-X9byVRzfhrV4b5LHvo",
+      "secure_url": "https://yt3.googleusercontent.com/-45nJ_SwOTKNICeL3jD0LaAIHZ4le8ak4AeuzMOr_z5Qzt1q2TR2rqkG-X9byVRzfhrV4b5LHvo"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -79,8 +87,15 @@
     "email": "KRSNAOfficial@mail.com",
     "fullName": "KRSNA",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZSXMsDfcmB-Olaqu_0av1XFlHq5S5qsTK5-92eL0Q",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZSXMsDfcmB-Olaqu_0av1XFlHq5S5qsTK5-92eL0Q",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZSXMsDfcmB-Olaqu_0av1XFlHq5S5qsTK5-92eL0Q"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -92,8 +107,15 @@
     "email": "eminem@mail.com",
     "fullName": "EminemMusic",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZQrpStGczvXHzHvPuwD14uphsidqaACSjLHQ61Jqw",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZQrpStGczvXHzHvPuwD14uphsidqaACSjLHQ61Jqw",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZQrpStGczvXHzHvPuwD14uphsidqaACSjLHQ61Jqw"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -105,8 +127,15 @@
     "email": "NeetCode@mail.com",
     "fullName": "NeetCode",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/FqiGBOsNpeWbNw20ULboW0jy88JdpqFO9a-YRJ0C2oc4lZ8uoHYJ38PWSkrjdC_zQgNW9pGU",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/FqiGBOsNpeWbNw20ULboW0jy88JdpqFO9a-YRJ0C2oc4lZ8uoHYJ38PWSkrjdC_zQgNW9pGU",
+      "secure_url": "https://yt3.googleusercontent.com/FqiGBOsNpeWbNw20ULboW0jy88JdpqFO9a-YRJ0C2oc4lZ8uoHYJ38PWSkrjdC_zQgNW9pGU"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -118,8 +147,15 @@
     "email": "hnasr@mail.com",
     "fullName": "Hussein Nasser",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZS0krHTgQPYs1OHwsfLpB_WHEaTPhDvIBY6X17Hlg",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZS0krHTgQPYs1OHwsfLpB_WHEaTPhDvIBY6X17Hlg",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZS0krHTgQPYs1OHwsfLpB_WHEaTPhDvIBY6X17Hlg"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -131,8 +167,15 @@
     "email": "TraversyMedia@mail.com",
     "fullName": "Traversy Media",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZQyCMRsbjT3YVfsbbnKgLfaH20Yb25KBwHP9qw9uw",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZQyCMRsbjT3YVfsbbnKgLfaH20Yb25KBwHP9qw9uw",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZQyCMRsbjT3YVfsbbnKgLfaH20Yb25KBwHP9qw9uw"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -144,8 +187,15 @@
     "email": "codewithantonio@mail.com",
     "fullName": "Code With Antonio",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/v5yebiyShCTNr18fnhq_oWHjQ24rAcrkexosBb8rFA8HI3elXOOSzUKfqrO8IlE_HaC7mgU0sw",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/v5yebiyShCTNr18fnhq_oWHjQ24rAcrkexosBb8rFA8HI3elXOOSzUKfqrO8IlE_HaC7mgU0sw",
+      "secure_url": "https://yt3.googleusercontent.com/v5yebiyShCTNr18fnhq_oWHjQ24rAcrkexosBb8rFA8HI3elXOOSzUKfqrO8IlE_HaC7mgU0sw"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -157,8 +207,15 @@
     "email": "CodeBullet@mail.com",
     "fullName": "Code Bullet",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZSJUKtJ1Ap2SkQTR-COp32d4tXsZWOuVMYyWhwH",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZSJUKtJ1Ap2SkQTR-COp32d4tXsZWOuVMYyWhwH",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZSJUKtJ1Ap2SkQTR-COp32d4tXsZWOuVMYyWhwH"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -170,8 +227,15 @@
     "email": "Danidev@mail.com",
     "fullName": "Dani",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZSIxhzGAGw1ta_j2v1hP4QmqOZk250D1gF6X9U5pw",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZSIxhzGAGw1ta_j2v1hP4QmqOZk250D1gF6X9U5pw",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZSIxhzGAGw1ta_j2v1hP4QmqOZk250D1gF6X9U5pw"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   },
@@ -183,8 +247,15 @@
     "email": "CodersGyan@mail.com",
     "fullName": "Coders Gyan",
     "isVerified": true,
-    "avatar": "https://yt3.googleusercontent.com/ytc/AIf8zZRhrM28GqZV2TWnm0v7e8QPuTHaPz2ke1HIZCcM",
-    "coverImage": "",
+    "avatar": {
+      "public_id": "",
+      "width": 512,
+      "height": 511,
+      "resource_type": "image",
+      "url": "https://yt3.googleusercontent.com/ytc/AIf8zZRhrM28GqZV2TWnm0v7e8QPuTHaPz2ke1HIZCcM",
+      "secure_url": "https://yt3.googleusercontent.com/ytc/AIf8zZRhrM28GqZV2TWnm0v7e8QPuTHaPz2ke1HIZCcM"
+    },
+    "coverImage": null,
     "watchHistory": [],
     "password": "$2b$10$o8Lf0y5YQIpVfnkr4z9BNeF//aHhJYDq6vv.N2QL/T18FMSRQuNV6"
   }
