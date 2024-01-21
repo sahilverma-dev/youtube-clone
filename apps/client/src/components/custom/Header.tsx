@@ -19,6 +19,8 @@ import { Input } from "../ui/input";
 
 // icons
 import { BiSearch as SearchIcon } from "react-icons/bi";
+import { buttonVariants } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   const { user, login } = userStore();
@@ -79,7 +81,14 @@ const Header = () => {
           </DropdownMenuContent>
         </DropdownMenu>
       ) : (
-        <Link href={"/login"}>Login</Link>
+        <Link
+          href={"/login"}
+          className={buttonVariants({
+            className: "rounded-lg px-6",
+          })}
+        >
+          Login
+        </Link>
       )}
     </div>
   );
