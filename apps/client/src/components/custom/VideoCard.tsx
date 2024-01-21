@@ -19,7 +19,7 @@ const VideoCard: FC<Props> = ({ video }) => {
         className="relative block aspect-video w-full rounded-lg overflow-hidden border group-hover:rounded-none transition-all"
       >
         <Image
-          src={video.thumbnail}
+          src={video.thumbnail.url}
           alt={video.title}
           height={500}
           width={600}
@@ -35,7 +35,9 @@ const VideoCard: FC<Props> = ({ video }) => {
           className="flex-shrink-0"
         >
           <Image
-            src={video.owner.avatar}
+            src={
+              video.owner?.avatar ? video.owner.avatar.url : "/default-user.png"
+            }
             height={70}
             width={70}
             alt={video.owner.fullName}

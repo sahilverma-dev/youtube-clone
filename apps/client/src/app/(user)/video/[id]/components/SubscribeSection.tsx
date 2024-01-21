@@ -16,7 +16,7 @@ const SubscribeSection: FC<Props> = ({ owner }) => {
     <div className="w-full flex items-center gap-4">
       <Link href={`/channel/${owner.username}`}>
         <Image
-          src={owner.avatar}
+          src={owner.avatar ? owner.avatar.url : "/default-user.png"}
           height={100}
           width={100}
           className="h-11 w-11 aspect-square object-cover rounded-full"

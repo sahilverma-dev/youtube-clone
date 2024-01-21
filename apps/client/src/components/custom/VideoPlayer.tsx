@@ -13,8 +13,8 @@ const VideoPlayer: FC<Props> = ({ video }) => {
   return (
     <div className="w-full rounded-lg bg-foreground aspect-video overflow-hidden">
       <video
-        src={video.video}
-        poster={video.thumbnail}
+        src={video.video.url}
+        poster={video.thumbnail.url}
         muted
         className="w-full h-full object-fill"
         autoPlay

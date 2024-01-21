@@ -1,7 +1,7 @@
 export interface Video {
   _id: string;
-  video: string;
-  thumbnail: string;
+  video: IFileObject;
+  thumbnail: IFileObject;
   title: string;
   description: string;
   duration: number;
@@ -17,7 +17,7 @@ export interface Owner {
   _id: string;
   username: string;
   fullName: string;
-  avatar: string;
+  avatar: IFileObject | null;
 }
 
 export interface Channel {}
@@ -29,6 +29,15 @@ export interface Comments {
   prevPage: any;
   hasNextPage: boolean;
   hasPrevPage: boolean;
+}
+
+export interface IFileObject {
+  public_id: string;
+  width: number;
+  height: number;
+  resource_type: "image" | "raw" | "video";
+  url: string;
+  secure_url: string;
 }
 
 export interface Comment {
@@ -53,8 +62,8 @@ export interface User {
   username: string;
   email: string;
   fullName: string;
-  avatar: string;
-  coverImage: string;
+  avatar: IFileObject | null;
+  coverImage: IFileObject | null;
   watchHistory: string[];
   password: string;
   createdAt: string;

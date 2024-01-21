@@ -64,7 +64,7 @@ const Header = () => {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Image
-              src={user?.avatar}
+              src={user?.avatar ? user.avatar.url : "/default-user.png"}
               height={70}
               width={70}
               alt={user?.fullName}

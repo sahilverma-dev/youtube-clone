@@ -93,9 +93,11 @@ const CommentForm: FC<Props> = ({ videoId }) => {
               <FormControl>
                 <div className="w-full flex items-center gap-2">
                   {user ? (
-                    <Link href={`/c/${user.username}`}>
+                    <Link href={`/channel/${user.username}`}>
                       <Image
-                        src={user.avatar}
+                        src={
+                          user.avatar ? user.avatar.url : "/default-user.png"
+                        }
                         alt={user.fullName}
                         height={50}
                         width={50}
