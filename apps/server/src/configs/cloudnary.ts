@@ -1,11 +1,11 @@
-import { v2 as cloudinary } from "cloudinary";
 import fs from "fs";
+import { UploadApiResponse, v2 as cloudinary } from "cloudinary";
+
 import {
   CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET,
   CLOUDINARY_CLOUD_NAME,
 } from "../constants/env";
-import { isValidUrl } from "../utils";
 
 cloudinary.config({
   cloud_name: CLOUDINARY_CLOUD_NAME,
@@ -13,50 +13,58 @@ cloudinary.config({
   api_secret: CLOUDINARY_API_SECRET,
 });
 
-export const uploadOnCloudinary = async (localFilePath: string) => {
-  try {
-    if (!localFilePath) return null;
+export type FolderType =
+  | "videos"
+  | "avatar"
+  | "thumbnails"
+  | "covers"
+  | "others";
 
-    const response = await cloudinary.uploader.upload(localFilePath, {
-      resource_type: "auto",
+const defaultFolder: FolderType = "others";
+
+export const uploadFile = async (
+  file: string,
+  folder?: FolderType
+): Promise<UploadApiResponse> => {
+  try {
+    const result = await cloudinary.uploader.upload(file, {
+      folder: folder || defaultFolder,
     });
-    console.log("File is uploaded on cloudinary".green, response.url.blue);
-    fs.unlinkSync(localFilePath);
-    return response;
-  } catch (error) {
-    fs.unlinkSync(localFilePath);
-    return null;
+    console.error(`File uploaded to Cloudinary on ${folder}`);
+
+    return result;
+  } catch (error: any) {
+    console.error("Error uploading file to Cloudinary:".red, error.message);
+    throw error;
+  } finally {
+    fs.unlinkSync(file);
   }
 };
 
-export const destroyFromCloudinary = async (cdn: string) => {
-  try {
-    if (!cdn) {
-      console.error("CDN URL is missing. Cannot delete from Cloudinary.");
-      return null;
-    }
-    if (!isValidUrl(cdn)) {
-      console.error("CDN URL is not valid");
-      return null;
-    }
-
-    const response = await cloudinary.uploader.destroy(cdn);
-
-    if (response.result === "ok") {
-      console.log(
-        "File successfully deleted from Cloudinary. URL:",
-        response.url.blue
-      );
-      return response;
-    } else {
-      console.error(
-        "Failed to delete file from Cloudinary. Response:",
-        response
-      );
-      return null;
-    }
-  } catch (error) {
-    console.error("An error occurred while deleting from Cloudinary:", error);
+export const mapToFileObject = (file: UploadApiResponse | null | undefined) => {
+  if (!file) {
     return null;
+  }
+
+  return {
+    secure_url: file?.secure_url,
+    url: file?.url,
+    width: file?.width,
+    height: file?.height,
+    public_id: file?.public_id,
+    resource_type: file?.resource_type,
+    duration: file?.duration,
+  };
+};
+
+export const removeFiles = async (...publicIds: string[]) => {
+  try {
+    if (publicIds.length == 0) return;
+
+    const response = await cloudinary.api.delete_resources(publicIds);
+    return response;
+  } catch (error) {
+    console.log("CLOUDINARY: Failed to remove file. ".red, error);
+    throw error;
   }
 };

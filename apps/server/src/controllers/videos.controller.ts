@@ -1,7 +1,7 @@
 import { asyncHandler } from "../utils/asyncHandler";
 import { ApiError } from "../utils/ApiErrors";
 import { ApiResponse } from "../utils/ApiResponse";
-import { uploadOnCloudinary } from "../configs/cloudnary";
+import { mapToFileObject, removeFiles, uploadFile } from "../configs/cloudnary";
 
 import { Video } from "../models/video.model";
 import { Types } from "mongoose";
@@ -195,8 +195,8 @@ export const uploadVideo = asyncHandler(async (req, res) => {
   }
 
   //   upload file on cloudnary
-  const video = await uploadOnCloudinary(videoFile[0].path);
-  const thumbnail = await uploadOnCloudinary(thumbnailFile[0].path);
+  const video = await uploadFile(videoFile[0].path, "videos");
+  const thumbnail = await uploadFile(thumbnailFile[0].path, "thumbnails");
 
   if (!video || !thumbnail) {
     throw new ApiError(500, "Failed to upload files");
@@ -255,12 +255,18 @@ export const updateVideo = asyncHandler(async (req, res) => {
     const oldThumbnailFile = videoExist.thumbnail;
 
     try {
-      const newThumbnail = await uploadOnCloudinary(thumbnailFile[0].path);
-      // TODO delete old thumbnail
+      const newThumbnail = await uploadFile(
+        thumbnailFile[0].path,
+        "thumbnails"
+      );
+
+      await removeFiles(oldThumbnailFile.public_id);
+
       try {
         videoExist.title = title;
         videoExist.description = description;
-        videoExist.thumbnail = newThumbnail?.url as string;
+        // TODO
+        // videoExist.thumbnail = mapToFileObject(newThumbnail);
 
         const updatedVideo = await videoExist.save();
         res.status(200).json(

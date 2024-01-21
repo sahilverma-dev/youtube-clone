@@ -4,10 +4,7 @@ import { User } from "./../models/user.model";
 import { asyncHandler } from "../utils/asyncHandler";
 import { ApiError } from "../utils/ApiErrors";
 
-import {
-  destroyFromCloudinary,
-  uploadOnCloudinary,
-} from "../configs/cloudnary";
+import { removeFiles, mapToFileObject, uploadFile } from "../configs/cloudnary";
 
 import { ApiResponse } from "../utils/ApiResponse";
 import { Types } from "mongoose";
@@ -64,17 +61,20 @@ export const registerUser = asyncHandler(async (req, res) => {
     ? files?.coverImage[0]?.path
     : null;
 
-  const avatar =
-    avatarLocalPath !== null ? await uploadOnCloudinary(avatarLocalPath) : null;
+  const avatarResponse =
+    avatarLocalPath !== null
+      ? await uploadFile(avatarLocalPath, "avatar")
+      : null;
 
-  const coverImage =
+  const coverImageResponse =
     coverImageLocalPath !== null
-      ? await uploadOnCloudinary(coverImageLocalPath)
+      ? await uploadFile(coverImageLocalPath, "covers")
       : null;
 
   const user = await User.create({
-    avatar: avatar !== null ? avatar.url : null,
-    coverImage: coverImage !== null ? coverImage?.url : null,
+    avatar: avatarResponse !== null ? mapToFileObject(avatarResponse) : null,
+    coverImage:
+      coverImageResponse !== null ? mapToFileObject(coverImageResponse) : null,
     email,
     fullName,
     password,
@@ -265,7 +265,7 @@ export const updateUserAvatar = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Avatar file is missing");
   }
 
-  const avatar = await uploadOnCloudinary(avatarFile);
+  const avatar = await uploadFile(avatarFile, "avatar");
   if (!avatar) {
     throw new ApiError(400, "Failed to upload avatar file");
   }
@@ -278,7 +278,7 @@ export const updateUserAvatar = asyncHandler(async (req, res) => {
       { $set: { avatar: avatar.url } },
       { new: true }
     ).select("-password -refreshToken");
-    await destroyFromCloudinary(user?.avatar as string);
+    await removeFiles(user?.avatar?.public_id as string);
 
     res
       .status(200)
@@ -296,7 +296,7 @@ export const updateUserCoverImage = asyncHandler(async (req, res) => {
     throw new ApiError(400, "coverImage file is missing");
   }
 
-  const coverImage = await uploadOnCloudinary(coverImageFile);
+  const coverImage = await uploadFile(coverImageFile, "covers");
   if (!coverImage) {
     throw new ApiError(400, "Failed to upload coverImage file");
   }
@@ -309,7 +309,7 @@ export const updateUserCoverImage = asyncHandler(async (req, res) => {
       { new: true }
     ).select("-password -refreshToken");
 
-    await destroyFromCloudinary(user?.coverImage as string);
+    await removeFiles(user?.coverImage?.public_id as string);
     res
       .status(200)
       .json(new ApiResponse(200, "User info updated", { user: updatedUser }));

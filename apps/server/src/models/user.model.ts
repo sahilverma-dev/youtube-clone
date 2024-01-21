@@ -8,14 +8,15 @@ import {
   REFRESH_TOKEN_EXPIRY,
   REFRESH_TOKEN_SECRET,
 } from "../constants/env";
+import { IFileObject, fileSchema } from "./file.model";
 
 export interface IUser {
   username: string;
   email: string;
   fullName: string;
-  avatar: string;
+  avatar: IFileObject | null;
+  coverImage: IFileObject | null;
   isVerified: boolean;
-  coverImage?: string;
   watchHistory?: Types.ObjectId[];
   password: string;
   refreshToken?: string;
@@ -57,10 +58,14 @@ const userSchema = new Schema<IUser, UserModel, IUserMethods>(
       default: false,
     },
     avatar: {
-      type: String, // cloudinary url
+      type: fileSchema,
+
+      default: null,
     },
     coverImage: {
-      type: String, // cloudinary url
+      type: fileSchema,
+
+      default: null,
     },
     watchHistory: [
       {

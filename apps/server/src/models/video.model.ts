@@ -1,9 +1,10 @@
 import { Schema, model, Document, Types, Model } from "mongoose";
 import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
+import { IFileObject, fileSchema } from "./file.model";
 
 export interface IVideo extends Document {
-  video: string;
-  thumbnail: string;
+  video: IFileObject;
+  thumbnail: IFileObject;
   title: string;
   description: string;
   duration: number;
@@ -21,11 +22,11 @@ export type VideoModel = Model<IVideo, unknown, IVideoMethods>;
 const videoSchema = new Schema<IVideo, VideoModel, IVideoMethods>(
   {
     video: {
-      type: String,
+      type: fileSchema,
       required: [true, "Video file is required"],
     },
     thumbnail: {
-      type: String,
+      type: fileSchema,
       required: [true, "Thumbnail is required"],
     },
     title: {
