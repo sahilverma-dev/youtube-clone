@@ -2,8 +2,11 @@
 
 import { getUser } from "@/api/auth/user/user";
 import { useEffect } from "react";
+
 import { userStore } from "@/store";
+
 import Link from "next/link";
+import Image from "next/image";
 
 // components
 import {
@@ -14,13 +17,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Image from "next/image";
+import { Button, buttonVariants } from "../ui/button";
 import { Input } from "../ui/input";
 
 // icons
 import { BiSearch as SearchIcon } from "react-icons/bi";
-import { buttonVariants } from "../ui/button";
-import { cn } from "@/lib/utils";
+import { BsPlusLg as AddIcon } from "react-icons/bs";
 
 const Header = () => {
   const { user, login } = userStore();
@@ -60,36 +62,56 @@ const Header = () => {
           ))}
         </div> */}
       </div>
-      {user ? (
+      <div className="flex items-center justify-between gap-2">
         <DropdownMenu>
-          <DropdownMenuTrigger>
-            <Image
-              src={user?.avatar ? user.avatar.url : "/default-user.png"}
-              height={70}
-              width={70}
-              alt={user?.fullName}
-              className="h-10 w-10 aspect-square rounded-full object-cover"
-            />
+          <DropdownMenuTrigger asChild>
+            {/* <Button>Upload</Button> */}
+            <Button size={"icon"} variant={"outline"}>
+              <AddIcon size={20} />
+            </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel>Create</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href={"/video"}>Video</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href={"/post"}>Post</Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-      ) : (
-        <Link
-          href={"/login"}
-          className={buttonVariants({
-            className: "rounded-lg px-6",
-          })}
-        >
-          Login
-        </Link>
-      )}
+        {user ? (
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <Image
+                src={user?.avatar ? user.avatar.url : "/default-user.png"}
+                height={70}
+                width={70}
+                alt={user?.fullName}
+                className="h-10 w-10 aspect-square rounded-full object-cover"
+              />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Profile</DropdownMenuItem>
+              <DropdownMenuItem>Billing</DropdownMenuItem>
+              <DropdownMenuItem>Team</DropdownMenuItem>
+              <DropdownMenuItem>Subscription</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <Link
+            href={"/login"}
+            className={buttonVariants({
+              className: "rounded-lg px-6",
+            })}
+          >
+            Login
+          </Link>
+        )}
+      </div>
     </div>
   );
 };

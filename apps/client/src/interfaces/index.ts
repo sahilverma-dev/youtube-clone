@@ -76,8 +76,8 @@ export interface Channel {
   username: string;
   email: string;
   fullName: string;
-  avatar: string;
-  coverImage: string;
+  avatar: IFileObject | null;
+  coverImage: IFileObject | null;
   subscribersCount: number;
   channelsSubscribedToCount: number;
   isSubscribed: boolean;

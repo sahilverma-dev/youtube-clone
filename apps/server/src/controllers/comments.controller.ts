@@ -98,10 +98,17 @@ export const addCommentToVideo = asyncHandler(async (req, res) => {
     throw new ApiError(404, "Video doesn't exists");
   }
 
+  // check for the user
+
+  const { user } = req;
+  if (!user) {
+    throw new ApiError(401, "Unauthenticated");
+  }
+
   // add comment
   const comment = await Comment.create({
     video: videoExist._id,
-    owner: new Types.ObjectId(req?.user?._id),
+    owner: user?._id,
     content: content.trim(),
   });
 

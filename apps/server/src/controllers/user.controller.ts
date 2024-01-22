@@ -336,8 +336,6 @@ export const getCurrentUser = asyncHandler(async (req, res) => {
 export const getUserChannelProfile = asyncHandler(async (req, res) => {
   const { username } = req.params as { username: string };
 
-  console.log(username);
-
   if (!username) {
     throw new ApiError(400, "username is required");
   }
@@ -400,6 +398,69 @@ export const getUserChannelProfile = asyncHandler(async (req, res) => {
   }
 
   res.status(200).json(new ApiResponse(200, "Channel Data", channel[0]));
+});
+
+export const getUserChannelVideos = asyncHandler(async (req, res) => {
+  const { username } = req.params as { username: string };
+  const { page = 1, limit = 20 } = req.query;
+
+  if (!username) {
+    throw new ApiError(400, "username is required");
+  }
+
+  const userExist = await User.findOne({ username });
+
+  if (!userExist) {
+    throw new ApiError(404, "User doesn't exists");
+  }
+
+  const aggregate = Video.aggregate([
+    {
+      $match: {
+        isPublished: true,
+        owner: userExist?._id,
+      },
+    },
+    {
+      $lookup: {
+        from: "users",
+        as: "owner",
+        foreignField: "_id",
+        localField: "owner",
+        pipeline: [
+          {
+            $project: {
+              fullName: 1,
+              avatar: 1,
+              username: 1,
+            },
+          },
+        ],
+      },
+    },
+    {
+      $addFields: {
+        owner: { $arrayElemAt: ["$owner", 0] },
+      },
+    },
+  ]);
+
+  // @ts-ignore
+  const videos = await Video.aggregatePaginate(aggregate, {
+    page: page ? Number(page) : 0,
+    limit: limit ? Number(limit) : 10,
+  });
+
+  res.status(200).json(
+    new ApiResponse(200, "Channel Data", {
+      videos: videos?.docs,
+      totalVideos: videos?.totalDocs,
+      nextPage: videos?.nextPage,
+      prevPage: videos?.prevPage,
+      hasNextPage: videos?.hasNextPage,
+      hasPrevPage: videos?.hasPrevPage,
+    })
+  );
 });
 
 export const addVideoToUserHistory = asyncHandler(async (req, res) => {

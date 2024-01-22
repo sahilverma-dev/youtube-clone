@@ -44,6 +44,34 @@ export const likeVideo = asyncHandler(async (req, res) => {
   res.status(200).json(new ApiResponse(200, "Video liked", like));
 });
 
+export const isVideoLiked = asyncHandler(async (req, res) => {
+  const { id } = req.params as { id: string };
+
+  if (!id) {
+    throw new ApiError(400, "Video id is required");
+  }
+
+  const { user } = req;
+
+  if (!user) {
+    res.status(200).json(new ApiResponse(200, "No user", false));
+  }
+
+  const videoExist = await Video.findById(id);
+  if (!videoExist) {
+    throw new ApiError(401, "Video doesn't exists");
+  }
+
+  const liked = await Like.findOne({
+    video: videoExist._id,
+    likedBy: user?._id,
+  });
+
+  res
+    .status(200)
+    .json(new ApiResponse(200, "Video Liked", liked ? true : false));
+});
+
 export const unlikeVideo = asyncHandler(async (req, res) => {
   const { id } = req.params as { id: string };
 

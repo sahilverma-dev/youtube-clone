@@ -29,12 +29,18 @@ import Link from "next/link";
 
 // icons
 import { CgSpinner as SpinnerIcon } from "react-icons/cg";
+import {
+  AiOutlineEye as ShowIcon,
+  AiOutlineEyeInvisible as HideIcon,
+} from "react-icons/ai";
 
 import { useMutation } from "@tanstack/react-query";
 import { loginUser } from "@/api/auth/user/login";
 import { toast } from "@/components/ui/use-toast";
 import { ApiResponse, User } from "@/interfaces";
 import { userStore } from "@/store";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 // import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
@@ -50,6 +56,8 @@ const formSchema = z.object({
 const LoginForm = () => {
   const { login } = userStore();
   const { replace } = useRouter();
+
+  const [showPassword, setShowPassword] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -134,12 +142,30 @@ const LoginForm = () => {
                   <FormControl>
                     <div className="grid gap-2">
                       <Label htmlFor="password">Password</Label>
-                      <Input
-                        id="password"
-                        className="w-full rounded-lg"
-                        placeholder="Enter your password"
-                        {...field}
-                      />
+                      <div
+                        className={cn([
+                          "flex items-center h-10 w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-within:outline-none focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ",
+                        ])}
+                      >
+                        <input
+                          id="password"
+                          type={showPassword ? "text" : "password"}
+                          className=" px-3 py-2  h-full w-full outline-none bg-transparent"
+                          placeholder="Enter your password"
+                          {...field}
+                        />
+                        <Button
+                          type="button"
+                          size={"icon"}
+                          variant={"ghost"}
+                          className="aspect-square"
+                          onClick={() => {
+                            setShowPassword((state) => !state);
+                          }}
+                        >
+                          {showPassword ? <HideIcon /> : <ShowIcon />}
+                        </Button>
+                      </div>
                     </div>
                   </FormControl>
                   <FormMessage />

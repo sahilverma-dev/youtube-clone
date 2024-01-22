@@ -64,7 +64,6 @@ const userSchema = new Schema<IUser, UserModel, IUserMethods>(
     },
     coverImage: {
       type: fileSchema,
-
       default: null,
     },
     watchHistory: [

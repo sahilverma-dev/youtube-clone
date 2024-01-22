@@ -8,6 +8,8 @@ interface Props {
 
 // icons
 import { MdDownload as DownloadIcon } from "react-icons/md";
+import { CgSpinner as SpinnerIcon } from "react-icons/cg";
+
 import {
   AiOutlineShareAlt as ShareIcon,
   AiOutlineLike as LikeOutlineIcon,
@@ -25,12 +27,21 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
 import { Button, buttonVariants } from "@/components/ui/button";
+
+// icons
+
 import { Video } from "@/interfaces";
 import { cn, formatLikeCount } from "@/lib/utils";
+import { useQuery } from "@tanstack/react-query";
+import { getIsVideoLiked } from "@/api/videos/getIsVideoLiked";
 
 const LikeUnlikeSection: FC<Props> = ({ video }) => {
+  const isLiked = useQuery({
+    queryKey: [video._id, "liked"],
+    queryFn: () => getIsVideoLiked(video._id),
+  });
+
   const shareVideo = async () => {
     await navigator.share({
       title: video.title,
@@ -41,14 +52,22 @@ const LikeUnlikeSection: FC<Props> = ({ video }) => {
   return (
     <div className="w-full flex justify-end items-center gap-2">
       <div className="flex bg-secondary h-10 p-2 rounded-full items-center  divide-x divide-foreground">
-        <button className="flex items-center gap-2 px-2">
-          {video?.likedByUser ? <LikeFillIcon /> : <LikeOutlineIcon />}
-          <p className="text-sm">{formatLikeCount(video?.likes || 0)}</p>
-        </button>
-        <button className="flex items-center gap-2 px-2">
-          <DislikeOutlineIcon />
-          <p className="text-sm">0</p>
-        </button>
+        {isLiked.isLoading && <SpinnerIcon className="animate-spin text-xl" />}
+        {isLiked.data && (
+          <>
+            <button
+              className="flex items-center gap-2 px-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={isLiked?.isLoading}
+            >
+              {isLiked?.data?.data ? <LikeFillIcon /> : <LikeOutlineIcon />}
+              <p className="text-sm">{formatLikeCount(video?.likes || 0)}</p>
+            </button>
+            <button className="flex items-center gap-2 px-2">
+              <DislikeOutlineIcon />
+              <p className="text-sm">0</p>
+            </button>
+          </>
+        )}
       </div>
       <Button
         className="rounded-full gap-3"
@@ -59,7 +78,7 @@ const LikeUnlikeSection: FC<Props> = ({ video }) => {
         Share
       </Button>
       <a
-        href={video?.video}
+        href={video?.video.url}
         target="_blank"
         className={cn([
           buttonVariants({ variant: "secondary" }),

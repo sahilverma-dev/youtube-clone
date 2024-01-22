@@ -17,14 +17,14 @@ interface Props {
 const CommentCard: FC<Props> = ({ comment }) => {
   return (
     <div className="w-full flex items-center gap-2">
-      <Link href={`/channel/${comment.owner.username}`}>
+      <Link href={`/channel/${comment.owner?.username}`}>
         <Image
           src={
-            comment?.owner.avatar
+            comment?.owner?.avatar
               ? comment?.owner.avatar.url
               : "/default-user.png"
           }
-          alt={comment.owner.fullName}
+          alt={comment?.owner?.fullName}
           height={50}
           width={50}
           className="h-10 w-10 aspect-square rounded-full object-cover"
@@ -33,16 +33,16 @@ const CommentCard: FC<Props> = ({ comment }) => {
       <div className="w-full ">
         <p className="font-medium text-sm">
           <Link
-            href={`/channel/${comment.owner.username}`}
+            href={`/channel/${comment?.owner?.username}`}
             className="hover:text-secondary-foreground"
           >
-            @{comment.owner.username}
+            @{comment?.owner?.username}
           </Link>{" "}
           <span className="text-xs text-secondary-foreground">
-            {getTime(comment.createdAt)}
+            {getTime(comment?.createdAt)}
           </span>
         </p>
-        <p className="text-sm">{comment.content}</p>
+        <p className="text-sm">{comment?.content}</p>
       </div>
     </div>
   );

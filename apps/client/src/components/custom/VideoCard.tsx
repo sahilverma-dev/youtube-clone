@@ -9,9 +9,10 @@ import { HiOutlineDotsVertical as DotsIcon } from "react-icons/hi";
 
 interface Props {
   video: Video;
+  showAvatar?: boolean;
 }
 
-const VideoCard: FC<Props> = ({ video }) => {
+const VideoCard: FC<Props> = ({ video, showAvatar = false }) => {
   return (
     <div className="w-full space-y-2 mb-4 group">
       <Link
@@ -29,22 +30,27 @@ const VideoCard: FC<Props> = ({ video }) => {
           {formatVideoDuration(video.duration)}
         </div>
       </Link>
+
       <div className="flex flex-grow gap-2">
-        <Link
-          href={`/channel/${video.owner.username}`}
-          className="flex-shrink-0"
-        >
-          <Image
-            src={
-              video.owner?.avatar ? video.owner.avatar.url : "/default-user.png"
-            }
-            height={70}
-            width={70}
-            alt={video.owner.fullName}
-            className="h-10 w-10 aspect-square rounded-full object-cover"
-          />
-        </Link>
-        <div className="flex-grow flex flex-col ">
+        {showAvatar && (
+          <Link
+            href={`/channel/${video.owner.username}`}
+            className="flex-shrink-0"
+          >
+            <Image
+              src={
+                video.owner?.avatar
+                  ? video.owner.avatar.url
+                  : "/default-user.png"
+              }
+              height={70}
+              width={70}
+              alt={video.owner.fullName}
+              className="h-10 w-10 aspect-square rounded-full object-cover"
+            />
+          </Link>
+        )}
+        <div className="flex-grow flex flex-col w-full">
           <Link
             href={`/video/${video._id}`}
             className="font-semibold text-foreground"

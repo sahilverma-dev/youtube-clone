@@ -11,11 +11,28 @@ import CommentSection from "./components/CommentSection";
 import LikeUnlikeSection from "./components/LikeUnlikeSection";
 import SubscribeSection from "./components/SubscribeSection";
 import VideoCard from "@/components/custom/VideoCard";
+import { Metadata } from "next";
 
 interface Props {
   params: { id: string };
   searchParams: {};
 }
+
+export const generateMetadata: (props: Props) => Promise<Metadata> = async ({
+  params,
+}) => {
+  const { id } = params;
+
+  const { data: video } = await getVideoWithId(id);
+
+  return {
+    title: video.title,
+    description: video.description.slice(1.2),
+    openGraph: {
+      images: video.thumbnail.url,
+    },
+  };
+};
 
 const Video: FC<Props> = async ({ params }) => {
   const { id } = params;

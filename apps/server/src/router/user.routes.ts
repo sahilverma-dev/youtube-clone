@@ -6,6 +6,7 @@ import {
   changeCurrentPassword,
   getCurrentUser,
   getUserChannelProfile,
+  getUserChannelVideos,
   getUserHistory,
   loginUser,
   logoutUser,
@@ -52,6 +53,7 @@ router
   .patch(verifyJWT, upload.single("coverImage"), updateUserCoverImage);
 
 router.route("/c/:username").get(verifyJWT, getUserChannelProfile);
+router.route("/c/:username/videos").get(getUserChannelVideos);
 router.route("/history").get(verifyJWT, getUserHistory);
 router.post("/add-history", verifyJWT, addVideoToUserHistory);
 router.delete("/remove-history", verifyJWT, removeVideoFromUserHistory);

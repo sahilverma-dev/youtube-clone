@@ -74,8 +74,6 @@ const CommentForm: FC<Props> = ({ videoId }) => {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
-
     commentMutation({
       content: values.comment,
     });
