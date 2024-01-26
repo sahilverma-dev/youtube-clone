@@ -34,7 +34,7 @@ export const uploadFile = async (
 
     return result;
   } catch (error: any) {
-    console.error("Error uploading file to Cloudinary:".red, error.message);
+    console.log("Error uploading file to Cloudinary:".red, error);
     throw error;
   } finally {
     fs.unlinkSync(file);

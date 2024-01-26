@@ -1,5 +1,11 @@
+import VideoForm from "./components/VideoForm";
+
 const Video = () => {
-  return <div>Create Video</div>;
+  return (
+    <div>
+      <VideoForm />
+    </div>
+  );
 };
 
 export default Video;

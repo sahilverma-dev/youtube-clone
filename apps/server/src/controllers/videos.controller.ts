@@ -185,6 +185,7 @@ export const uploadVideo = asyncHandler(async (req, res) => {
   if (!title || !description) {
     throw new ApiError(400, "All fields are required");
   }
+
   // files
   const { videoFile, thumbnailFile } = req.files as {
     [key: string]: Express.Multer.File[];
@@ -206,9 +207,9 @@ export const uploadVideo = asyncHandler(async (req, res) => {
   const videoDoc = await Video.create({
     title: title?.trim(),
     description: description?.trim(),
-    owner: new Types.ObjectId(user?._id),
-    video: video?.url,
-    thumbnail: thumbnail?.url,
+    owner: user?._id,
+    video: mapToFileObject(video),
+    thumbnail: mapToFileObject(thumbnail),
     isPublished: isPublished === "true" ? true : false,
     duration: video?.duration as number,
   });

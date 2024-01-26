@@ -94,6 +94,7 @@ const RegisterForm = () => {
       toast({
         title: `Welcome ${data.data.fullName}`,
       });
+      login(data.data);
     },
     onError: (error: any) => {
       toast({
@@ -148,6 +149,7 @@ const RegisterForm = () => {
           {slide === 2 && "Upload your avatar and cover image (Not required)."}
         </CardDescription>
       </CardHeader>
+      {/* TODO */}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
           {slide === 1 && (
