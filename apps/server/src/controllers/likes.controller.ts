@@ -15,18 +15,24 @@ export const likeVideo = asyncHandler(async (req, res) => {
     throw new ApiError(404, "Video not found for the given id");
   }
 
+  const { user } = req;
+
+  if (!user) {
+    throw new ApiError(401, "Unauthorized");
+  }
+
   // Check if the user has already liked the video
   const existingLike = await Like.aggregate([
     {
       $match: {
         video: videoExist._id,
-        likedBy: req.user?._id,
+        likedBy: user?._id,
       },
     },
   ]);
 
-  if (existingLike) {
-    res.status(400).json(new ApiResponse(400, "Video already liked"));
+  if (existingLike.length) {
+    res.status(200).json(new ApiResponse(400, "Video already liked"));
 
     return;
   }
@@ -42,6 +48,43 @@ export const likeVideo = asyncHandler(async (req, res) => {
   }
 
   res.status(200).json(new ApiResponse(200, "Video liked", like));
+});
+
+export const videoLikes = asyncHandler(async (req, res) => {
+  const { id } = req.params as { id: string };
+
+  const videoExist = await Video.findOne({ _id: id });
+
+  if (!videoExist) {
+    throw new ApiError(404, "Video not found for the given id");
+  }
+
+  const { user } = req;
+
+  if (!user) {
+    throw new ApiError(401, "Unauthorized");
+  }
+
+  // Check if the user has already liked the video
+  const existingLike = await Like.aggregate([
+    {
+      $match: {
+        video: videoExist._id,
+        likedBy: user?._id,
+      },
+    },
+  ]);
+
+  const videoLikes = await Like.find({
+    video: videoExist._id,
+  });
+
+  res.status(200).json(
+    new ApiResponse(200, "Video likes", {
+      liked: existingLike.length ? true : false,
+      likes: videoLikes.length || 0,
+    })
+  );
 });
 
 export const isVideoLiked = asyncHandler(async (req, res) => {
@@ -81,10 +124,16 @@ export const unlikeVideo = asyncHandler(async (req, res) => {
     throw new ApiError(404, "Video not found for the given id");
   }
 
+  const { user } = req;
+
+  if (!user) {
+    res.status(200).json(new ApiResponse(200, "No user", false));
+  }
+
   // Check if the user has already liked the video
   const existingLike = await Like.findOne({
     video: videoExist._id,
-    likedBy: new Types.ObjectId(req.user?._id),
+    likedBy: user?._id,
   });
 
   if (!existingLike) {

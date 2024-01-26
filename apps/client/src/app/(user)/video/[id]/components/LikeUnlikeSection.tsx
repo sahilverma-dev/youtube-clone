@@ -33,13 +33,17 @@ import { Button, buttonVariants } from "@/components/ui/button";
 
 import { Video } from "@/interfaces";
 import { cn, formatLikeCount } from "@/lib/utils";
-import { useQuery } from "@tanstack/react-query";
-import { getIsVideoLiked } from "@/api/videos/getIsVideoLiked";
+import { useMutation, useQuery } from "@tanstack/react-query";
+
+import { likeVideo } from "@/api/likes/likeVideo";
+import { toast } from "@/components/ui/use-toast";
+import { unLikeVideo } from "@/api/likes/unlikeVideo";
+import { getVideoLikes } from "@/api/videos/getVideoLikes";
 
 const LikeUnlikeSection: FC<Props> = ({ video }) => {
   const isLiked = useQuery({
-    queryKey: [video._id, "liked"],
-    queryFn: () => getIsVideoLiked(video._id),
+    queryKey: [video._id, "likes"],
+    queryFn: () => getVideoLikes(video._id),
   });
 
   const shareVideo = async () => {
@@ -49,20 +53,79 @@ const LikeUnlikeSection: FC<Props> = ({ video }) => {
     });
   };
 
+  // mutations
+  const likeMutation = useMutation({
+    mutationFn: () =>
+      likeVideo({
+        videoId: video._id,
+      }),
+    onSuccess: (data) => {
+      toast({
+        title: "Video liked",
+      });
+      isLiked.refetch();
+    },
+    onError: (error: any) => {
+      toast({
+        title: error?.message || "Failed to like",
+        variant: "destructive",
+      });
+    },
+  });
+
+  const unLikeMutation = useMutation({
+    mutationFn: () =>
+      unLikeVideo({
+        videoId: video._id,
+      }),
+    onSuccess: () => {
+      toast({
+        title: "Video unliked",
+      });
+      isLiked.refetch();
+    },
+    onError: (error: any) => {
+      toast({
+        title: error?.message || "Failed to like",
+        variant: "destructive",
+      });
+    },
+  });
+
   return (
     <div className="w-full flex justify-end items-center gap-2">
-      <div className="flex bg-secondary h-10 p-2 rounded-full items-center  divide-x divide-foreground">
+      <div
+        className={cn([
+          "flex bg-secondary h-10 p-2 rounded-full items-center divide-x divide-foreground",
+          isLiked.isLoading && "aspect-square justify-center",
+        ])}
+      >
         {isLiked.isLoading && <SpinnerIcon className="animate-spin text-xl" />}
         {isLiked.data && (
           <>
             <button
               className="flex items-center gap-2 px-2 disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={isLiked?.isLoading}
+              onClick={
+                isLiked?.data?.data.liked
+                  ? () => unLikeMutation.mutate()
+                  : () => likeMutation.mutate()
+              }
             >
               {isLiked?.data?.data ? <LikeFillIcon /> : <LikeOutlineIcon />}
-              <p className="text-sm">{formatLikeCount(video?.likes || 0)}</p>
+              <p className="text-sm">
+                {formatLikeCount(isLiked.data.data.likes || 0)}
+              </p>
             </button>
-            <button className="flex items-center gap-2 px-2">
+            <button
+              className="flex items-center gap-2 px-2"
+              onClick={() => {
+                toast({
+                  title:
+                    "Due to procrastination, dislike functionality will not working. I hope you can understand 🙂",
+                });
+              }}
+            >
               <DislikeOutlineIcon />
               <p className="text-sm">0</p>
             </button>

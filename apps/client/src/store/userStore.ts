@@ -10,5 +10,6 @@ interface UserStore {
 export const userStore = create<UserStore>((set) => ({
   user: null,
   login: (user) => set({ user }),
+  // TODO: call to backend
   logout: () => set({ user: null }),
 }));
